@@ -1,3 +1,4 @@
 theme = "PaperMod"
 languageCode = "en-us"
 title = "Matt Lui"
+baseURL = "https://mattlui.com/"
