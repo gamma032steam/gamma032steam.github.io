@@ -1,39 +1,39 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>ExampleSite</title>
-    <link>https://examplesite.com/</link>
-    <description>Recent content on ExampleSite</description>
+    <title>Matt Lui</title>
+    <link>https://mattlui.com/</link>
+    <description>Recent content on Matt Lui</description>
     <image>
-      <url>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
-      <link>https://examplesite.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+      <url>https://mattlui.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://mattlui.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
     </image>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 18 Jul 2021 14:41:31 +1000</lastBuildDate><atom:link href="https://examplesite.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Jul 2021 14:41:31 +1000</lastBuildDate><atom:link href="https://mattlui.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Post</title>
-      <link>https://examplesite.com/post/</link>
+      <link>https://mattlui.com/post/</link>
       <pubDate>Sun, 18 Jul 2021 16:28:15 +1000</pubDate>
       
-      <guid>https://examplesite.com/post/</guid>
+      <guid>https://mattlui.com/post/</guid>
       <description></description>
     </item>
     
     <item>
       <title>My First Post</title>
-      <link>https://examplesite.com/posts/my-first-post/</link>
+      <link>https://mattlui.com/posts/my-first-post/</link>
       <pubDate>Sun, 18 Jul 2021 14:41:31 +1000</pubDate>
       
-      <guid>https://examplesite.com/posts/my-first-post/</guid>
+      <guid>https://mattlui.com/posts/my-first-post/</guid>
       <description>Hello? Test.</description>
     </item>
     
     <item>
       <title>My 1st post</title>
-      <link>https://examplesite.com/posts/page/</link>
+      <link>https://mattlui.com/posts/page/</link>
       <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
       
-      <guid>https://examplesite.com/posts/page/</guid>
+      <guid>https://mattlui.com/posts/page/</guid>
       <description>Desc Text.</description>
     </item>
     

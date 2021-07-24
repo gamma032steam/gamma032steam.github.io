@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://examplesite.com/post/</loc>
+    <loc>https://mattlui.com/post/</loc>
     <lastmod>2021-07-18T16:28:15+10:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/</loc>
+    <loc>https://mattlui.com/</loc>
     <lastmod>2021-07-18T14:41:31+10:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/my-first-post/</loc>
+    <loc>https://mattlui.com/posts/my-first-post/</loc>
     <lastmod>2021-07-18T14:41:31+10:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/</loc>
+    <loc>https://mattlui.com/posts/</loc>
     <lastmod>2021-07-18T14:41:31+10:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/first/</loc>
+    <loc>https://mattlui.com/tags/first/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/posts/page/</loc>
+    <loc>https://mattlui.com/posts/page/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/tags/</loc>
+    <loc>https://mattlui.com/tags/</loc>
     <lastmod>2020-09-15T11:30:03+00:00</lastmod>
   </url><url>
-    <loc>https://examplesite.com/categories/</loc>
+    <loc>https://mattlui.com/categories/</loc>
   </url>
 </urlset>
