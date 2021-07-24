@@ -1,5 +1,5 @@
-baseURL: "https://examplesite.com/"
-title: ExampleSite
+baseURL: "https://mattlui.com/"
+title: Matt Lui
 paginate: 5
 theme: PaperMod
 
@@ -8,7 +8,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
-googleAnalytics: UA-123-45
+googleAnalytics: 273209799
 
 minify:
     disableXML: true
@@ -16,10 +16,10 @@ minify:
 
 params:
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
-    title: ExampleSite
-    description: "ExampleSite description"
-    keywords: [Blog, Portfolio, PaperMod]
-    author: Me
+    title: Matt Lui
+    description: "Hey, I'm Matt, an Aussie software engineer. This website is a help-guide to document tough problems I've solved."
+    keywords: [Blog, Portfolio]
+    author: Matt Lui
     # author: ["Me", "You"] # multiple authors
     images: ["<link or path of image for opengraph, twitter-cards>"]
     DateFormat: "January 2, 2006"
@@ -74,12 +74,10 @@ params:
         Content: Welcome to my blog
 
     socialIcons:
-        - name: twitter
-          url: "https://twitter.com/"
-        - name: stackoverflow
-          url: "https://stackoverflow.com"
         - name: github
-          url: "https://github.com/"
+          url: "https://github.com/gamma032steam"
+        - name: linkedin
+          url: "https://www.linkedin.com/in/matt-lui/"
 
     analytics:
         google:
@@ -110,19 +108,19 @@ params:
         minMatchCharLength: 0
         keys: ["title", "permalink", "summary", "content"]
 menu:
-    main:
-        - identifier: categories
-          name: categories
-          url: /categories/
-          weight: 10
-        - identifier: tags
-          name: tags
-          url: /tags/
-          weight: 20
-        - identifier: example
-          name: example.org
-          url: https://example.org
-          weight: 30
+    #main:
+    #    - identifier: categories
+    #      name: categories
+    #      url: /categories/
+        #   weight: 10
+        # - identifier: tags
+        #   name: tags
+        #   url: /tags/
+        #   weight: 20
+        # - identifier: example
+        #   name: example.org
+        #   url: https://example.org
+        #   weight: 30
 # Read: https://github.com/adityatelange/hugo-PaperMod/wiki/FAQs#using-hugos-syntax-highlighter-chroma
 # pygmentsUseClasses: true
 # markup:
