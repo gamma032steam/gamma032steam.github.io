@@ -2,16 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://mattlui.com/post/</loc>
-    <lastmod>2021-07-18T16:28:15+10:00</lastmod>
+    <loc>https://mattlui.com/posts/pcd-notes/</loc>
+    <lastmod>2021-11-24T16:28:15+10:00</lastmod>
   </url><url>
     <loc>https://mattlui.com/</loc>
-    <lastmod>2021-07-18T14:41:31+10:00</lastmod>
-  </url><url>
-    <loc>https://mattlui.com/posts/my-first-post/</loc>
-    <lastmod>2021-07-18T14:41:31+10:00</lastmod>
+    <lastmod>2021-11-24T16:28:15+10:00</lastmod>
   </url><url>
     <loc>https://mattlui.com/posts/</loc>
+    <lastmod>2021-11-24T16:28:15+10:00</lastmod>
+  </url><url>
+    <loc>https://mattlui.com/posts/post/</loc>
+    <lastmod>2021-07-18T16:28:15+10:00</lastmod>
+  </url><url>
+    <loc>https://mattlui.com/posts/my-first-post/</loc>
     <lastmod>2021-07-18T14:41:31+10:00</lastmod>
   </url><url>
     <loc>https://mattlui.com/tags/first/</loc>
