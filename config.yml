@@ -70,8 +70,8 @@ params:
 
     # home-info mode
     homeInfoParams:
-        Title: "Hi there \U0001F44B"
-        Content: Welcome to my blog
+        Title: "Hey, I'm Matt."
+        Content: I'm an Aussie software engineer. This website is a help-guide and tutorial compilation documenting tough problems I've solved.
 
     socialIcons:
         - name: github
@@ -93,7 +93,7 @@ params:
         hiddenInSingle: true # hide on single page
 
     editPost:
-        URL: "https://github.com/<path_to_repo>/content"
+        URL: "https://github.com/gamma032steam/gamma032steam.github.io/tree/main/content"
         Text: "Suggest Changes" # edit text
         appendFilePath: true # to append file path to Edit link
 
