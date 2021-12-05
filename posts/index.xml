@@ -28,14 +28,5 @@
       <description>How to render a Material UI Drawer component inside a containing block.</description>
     </item>
     
-    <item>
-      <title>My First Post</title>
-      <link>https://mattlui.com/posts/my-first-post/</link>
-      <pubDate>Sun, 18 Jul 2021 14:41:31 +1000</pubDate>
-      
-      <guid>https://mattlui.com/posts/my-first-post/</guid>
-      <description>Hello?  Test.  </description>
-    </item>
-    
   </channel>
 </rss>
