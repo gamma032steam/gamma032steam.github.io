@@ -1,5 +1,6 @@
 ---
 title: "Material UI Drawer in a Div"
+description: "How to render a Material UI Drawer component inside a containing block."
 date: 2021-07-18T16:28:15+10:00
 draft: false
 ---

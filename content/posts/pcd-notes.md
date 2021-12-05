@@ -1,12 +1,13 @@
 ---
 title: "Google Cloud Professional Cloud Developer Study Guide Notes"
+description: "Complete Professional Cloud Developer notes built around the official study guide for the exam."
 date: 2021-11-24T16:28:15+10:00
 draft: false
 ---
 
-The Professional Cloud Developer exam covers a large, possibly unbounded, amount of content. These notes seek to encapsulate, or at least link out to, everything examinable. 
+The Professional Cloud Developer exam covers a large, possibly unbounded, amount of content. These notes were built to cover every topic Google has suggested can be on the exam.
 
-The notes have a grey background, and each correspond to one of the ninity-one dot-points in the [GCP Professional Cloud Developer Study Guide](https://cloud.google.com/certification/guides/cloud-developer).
+The notes have a grey background, and each correspond to one of the ninity-one dot-points in the official [GCP Professional Cloud Developer Study Guide](https://cloud.google.com/certification/guides/cloud-developer). All outbound links refer to Google Cloud documentation.
 
 Everything's been sourced from [A Cloud Guru](https://acloudguru.com/), [Google Cloud Training on Coursera](https://www.coursera.org/learn/gcp-fundamentals) or the [Google Cloud Docs](https://cloud.google.com/docs) themselves.
 
@@ -216,20 +217,20 @@ Everything's been sourced from [A Cloud Guru](https://acloudguru.com/), [Google 
 	-   Test-driven development: write tests before code.
 	-   Infrastructure as code: define Cloud resource with code.
 -   Debugging and profiling code
-	-   See 5.3, Cloud Trace and Cloud Debugger
+	-   See 5.3, Cloud Trace and Cloud Debugger.
 
 2.3 Testing. Considerations include:
 
 -   Unit testing
-	-   Test a component in isolation
-	-   Find easy-to-spot errors
+	-   Test a component in isolation.
+	-   Find easy-to-spot errors.
 	-   Automate your tests!
 -   Integration testing
-	-   Group components together, include dependencies
+	-   Group components together, include dependencies.
 -   Performance testing
-	-   Measure latency
+	-   Measure latency.
 -   Load testing
-	-   Place under heavy load, maybe for a long period and test scalability
+	-   Place under heavy load, maybe for a long period and test scalability.
 
 2.4 Building. Considerations include:
 

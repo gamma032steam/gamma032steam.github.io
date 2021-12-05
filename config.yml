@@ -1,7 +1,7 @@
 baseURL: "https://mattlui.com/"
 title: Matt Lui
 paginate: 5
-theme: PaperMod
+theme: hugo-PaperMod
 
 enableRobotsTXT: true
 buildDrafts: false
@@ -15,6 +15,8 @@ minify:
     minifyOutput: true
 
 params:
+    custom_css: ["css/custom.css"]
+    custom_js: ["js/custom.js"]
     env: production # to enable google analytics, opengraph, twitter-cards and schema.
     title: Matt Lui
     description: "Hey, I'm Matt, an Aussie software engineer. This website is a help-guide to document tough problems I've solved."
