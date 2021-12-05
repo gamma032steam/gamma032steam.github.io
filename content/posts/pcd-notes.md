@@ -604,9 +604,10 @@ Everything's been sourced from [A Cloud Guru](https://acloudguru.com/), [Google 
 		-   Connect to an IP via a connection string, as opposed to hard-coding the IP.
 		-   If it's a DNS name, use an `ExternalName` service.
 	-   Kubernetes Services
-			1. `ClusterIP`: Expose an IP to the cluster.
-			2. `NodePort`: Expose an IP of each node at a specific port.
-			3. `LoadBalancer`: Expose externally with a cloud LB.
+
+		1. `ClusterIP`: Expose an IP to the cluster.
+		2. `NodePort`: Expose an IP of each node at a specific port.
+		3. `LoadBalancer`: Expose externally with a cloud LB.
 	- In GCP, this is a regional network LB. Use an ingress object for a global LB.
 	-   [Cloud Tech Video: Mapping External Services (Kubernetes)](https://youtu.be/fvpq4jqtuZ8).
 -   Reading instance metadata to obtain application configuration
