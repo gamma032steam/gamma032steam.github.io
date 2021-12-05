@@ -16,22 +16,16 @@
       <pubDate>Wed, 24 Nov 2021 16:28:15 +1000</pubDate>
       
       <guid>https://mattlui.com/posts/pcd-notes/</guid>
-      <description>The Professional Cloud Developer exam covers a large, possibly unbounded, amount of content. These notes seek to encapsulate, or at least link out to, everything examinable.
-The notes have a grey background, and each correspond to one of the ninity-one dot-points in the GCP Professional Cloud Developer Study Guide.
-Everything&amp;rsquo;s been sourced from A Cloud Guru, Google Cloud Training on Coursera or the Google Cloud Docs themselves.
-Table of contents  Section 1: Designing highly scalable, available, and reliable cloud-native applications Section 2: Building and testing applications Section 3: Deploying applications Section 4: Integrating Google Cloud services Section 5: Managing application performance monitoring  Section 1: Designing highly scalable, available, and reliable cloud-native applications 1.</description>
+      <description>Complete Professional Cloud Developer notes built around the official study guide for the exam.</description>
     </item>
     
     <item>
       <title>Material UI Drawer in a Div</title>
-      <link>https://mattlui.com/posts/post/</link>
+      <link>https://mattlui.com/posts/mui-drawer/</link>
       <pubDate>Sun, 18 Jul 2021 16:28:15 +1000</pubDate>
       
-      <guid>https://mattlui.com/posts/post/</guid>
-      <description>Try it in CodeSandbox! ✏️️
-The problem Material UI&amp;rsquo;s drawer component is an animated sidebar. You can use it as a navigation bar or side sheet.
-By default, the drawer is position: fixed, meaning it&amp;rsquo;s removed from the document flow and positioned relative to the viewport. This causes two issues:
- The drawer is always stuck to the side of the screen The drawer doesn&amp;rsquo;t respect the position of the content around it.</description>
+      <guid>https://mattlui.com/posts/mui-drawer/</guid>
+      <description>How to render a Material UI Drawer component inside a containing block.</description>
     </item>
     
     <item>
@@ -40,16 +34,7 @@ By default, the drawer is position: fixed, meaning it&amp;rsquo;s removed from t
       <pubDate>Sun, 18 Jul 2021 14:41:31 +1000</pubDate>
       
       <guid>https://mattlui.com/posts/my-first-post/</guid>
-      <description>Hello? Test.</description>
-    </item>
-    
-    <item>
-      <title>My 1st post</title>
-      <link>https://mattlui.com/posts/page/</link>
-      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
-      
-      <guid>https://mattlui.com/posts/page/</guid>
-      <description>Desc Text.</description>
+      <description>Hello?  Test.  </description>
     </item>
     
   </channel>

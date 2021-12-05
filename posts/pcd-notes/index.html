@@ -5,16 +5,13 @@
 <meta name=robots content="index, follow">
 <title>Google Cloud Professional Cloud Developer Study Guide Notes | Matt Lui</title>
 <meta name=keywords content>
-<meta name=description content="The Professional Cloud Developer exam covers a large, possibly unbounded, amount of content. These notes seek to encapsulate, or at least link out to, everything examinable.
-The notes have a grey background, and each correspond to one of the ninity-one dot-points in the GCP Professional Cloud Developer Study Guide.
-Everything&rsquo;s been sourced from A Cloud Guru, Google Cloud Training on Coursera or the Google Cloud Docs themselves.
-Table of contents  Section 1: Designing highly scalable, available, and reliable cloud-native applications Section 2: Building and testing applications Section 3: Deploying applications Section 4: Integrating Google Cloud services Section 5: Managing application performance monitoring  Section 1: Designing highly scalable, available, and reliable cloud-native applications 1.">
+<meta name=description content="Complete Professional Cloud Developer notes built around the official study guide for the exam.">
 <meta name=author content="Matt Lui">
 <link rel=canonical href=https://mattlui.com/posts/pcd-notes/>
 <meta name=google-site-verification content="XYZabc">
 <meta name=yandex-verification content="XYZabc">
 <meta name=msvalidate.01 content="XYZabc">
-<link crossorigin=anonymous href=/assets/css/stylesheet.min.35cd0f65a15cafa92372b8313deef5960aae04b90ad722f2bbf509eb0468137e.css integrity="sha256-Nc0PZaFcr6kjcrgxPe71lgquBLkK1yLyu/UJ6wRoE34=" rel="preload stylesheet" as=style>
+<link crossorigin=anonymous href=/assets/css/stylesheet.min.ba3afea71e93df38c9e9fe751a07236c5dc1d523e0176aa959d61683c54091c2.css integrity="sha256-ujr+px6T3zjJ6f51GgcjbF3B1SPgF2qpWdYWg8VAkcI=" rel="preload stylesheet" as=style>
 <script defer crossorigin=anonymous src=/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
 <link rel=icon href=https://mattlui.com/%3Clink%20/%20abs%20url%3E>
 <link rel=icon type=image/png sizes=16x16 href=https://mattlui.com/%3Clink%20/%20abs%20url%3E>
@@ -24,11 +21,11 @@ Table of contents  Section 1: Designing highly scalable, available, and reliable
 <meta name=theme-color content="#2e2e33">
 <meta name=msapplication-TileColor content="#2e2e33">
 <meta name=generator content="Hugo 0.89.4">
-<meta property="og:title" content="Google Cloud Professional Cloud Developer Study Guide Notes">
-<meta property="og:description" content="The Professional Cloud Developer exam covers a large, possibly unbounded, amount of content. These notes seek to encapsulate, or at least link out to, everything examinable.
-The notes have a grey background, and each correspond to one of the ninity-one dot-points in the GCP Professional Cloud Developer Study Guide.
-Everything&rsquo;s been sourced from A Cloud Guru, Google Cloud Training on Coursera or the Google Cloud Docs themselves.
-Table of contents  Section 1: Designing highly scalable, available, and reliable cloud-native applications Section 2: Building and testing applications Section 3: Deploying applications Section 4: Integrating Google Cloud services Section 5: Managing application performance monitoring  Section 1: Designing highly scalable, available, and reliable cloud-native applications 1.">
+<noscript>
+<style>#theme-toggle,.top-link{display:none}</style>
+<style>@media(prefers-color-scheme:dark){:root{--theme:rgb(29, 30, 32);--entry:rgb(46, 46, 51);--primary:rgb(218, 218, 219);--secondary:rgb(155, 156, 157);--tertiary:rgb(65, 66, 68);--content:rgb(196, 196, 197);--hljs-bg:rgb(46, 46, 51);--code-bg:rgb(55, 56, 62);--border:rgb(51, 51, 51)}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
+</noscript><meta property="og:title" content="Google Cloud Professional Cloud Developer Study Guide Notes">
+<meta property="og:description" content="Complete Professional Cloud Developer notes built around the official study guide for the exam.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://mattlui.com/posts/pcd-notes/"><meta property="og:image" content="https://mattlui.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2021-11-24T16:28:15+10:00">
@@ -36,19 +33,12 @@ Table of contents  Section 1: Designing highly scalable, available, and reliable
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://mattlui.com/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E">
 <meta name=twitter:title content="Google Cloud Professional Cloud Developer Study Guide Notes">
-<meta name=twitter:description content="The Professional Cloud Developer exam covers a large, possibly unbounded, amount of content. These notes seek to encapsulate, or at least link out to, everything examinable.
-The notes have a grey background, and each correspond to one of the ninity-one dot-points in the GCP Professional Cloud Developer Study Guide.
-Everything&rsquo;s been sourced from A Cloud Guru, Google Cloud Training on Coursera or the Google Cloud Docs themselves.
-Table of contents  Section 1: Designing highly scalable, available, and reliable cloud-native applications Section 2: Building and testing applications Section 3: Deploying applications Section 4: Integrating Google Cloud services Section 5: Managing application performance monitoring  Section 1: Designing highly scalable, available, and reliable cloud-native applications 1.">
+<meta name=twitter:description content="Complete Professional Cloud Developer notes built around the official study guide for the exam.">
 <script type=application/ld+json>{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Posts","item":"https://mattlui.com/posts/"},{"@type":"ListItem","position":2,"name":"Google Cloud Professional Cloud Developer Study Guide Notes","item":"https://mattlui.com/posts/pcd-notes/"}]}</script>
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Google Cloud Professional Cloud Developer Study Guide Notes","name":"Google Cloud Professional Cloud Developer Study Guide Notes","description":"The Professional Cloud Developer exam covers a large, possibly unbounded, amount of content. These notes seek to encapsulate, or at least link out to, everything examinable.\nThe notes have a grey background, and each correspond to one of the ninity-one dot-points in the GCP Professional Cloud Developer Study Guide.\nEverything\u0026rsquo;s been sourced from A Cloud Guru, Google Cloud Training on Coursera or the Google Cloud Docs themselves.\nTable of contents  Section 1: Designing highly scalable, available, and reliable cloud-native applications Section 2: Building and testing applications Section 3: Deploying applications Section 4: Integrating Google Cloud services Section 5: Managing application performance monitoring  Section 1: Designing highly scalable, available, and reliable cloud-native applications 1.","keywords":[],"articleBody":"The Professional Cloud Developer exam covers a large, possibly unbounded, amount of content. These notes seek to encapsulate, or at least link out to, everything examinable.\nThe notes have a grey background, and each correspond to one of the ninity-one dot-points in the GCP Professional Cloud Developer Study Guide.\nEverything’s been sourced from A Cloud Guru, Google Cloud Training on Coursera or the Google Cloud Docs themselves.\nTable of contents  Section 1: Designing highly scalable, available, and reliable cloud-native applications Section 2: Building and testing applications Section 3: Deploying applications Section 4: Integrating Google Cloud services Section 5: Managing application performance monitoring  Section 1: Designing highly scalable, available, and reliable cloud-native applications 1.1 Designing high-performing applications and APIs. Considerations include:\n Microservices  Microservices refers to an architectural style for developing applications. Microservices allow a large application to be decomposed into independent constituent parts, with each part having its own realm of responsibility. Benefits  Smaller, more modular codebase and deployments. A/B releases, independent development cycles for each service. Simplifies tangled dependencies. Stronger contracts between services. Easier to split up testing, cost accounting, logging and monitoring.   On App Engine, deploy a service per microservice.   Scaling velocity characteristics/trade-offs of IaaS (infrastructure as a service) vs. CaaS (container as a service) vs. PaaS (platform as a service)  Tradeoffs  IaaS (Compute Engine) PaaS (App Engine / GKE) CaaS (Cloud Run) FaaS (Cloud Functions)   Scalability  Serverless applications can scale quickly and you only pay for what you use (e.g. Cloud Run, Cloud Functions, App Engine). Aim for stateless microservices. You want to minimize start-up time for scalability. Create images, use containers or improve the app. With containers, use smaller base images (Alpine) and the builder pattern to minimize their size. See 5.2 GKE Autoscaling. GCE can autoscale managed instance groups. App Engine Flexible vs Standard: Standard spins up instances quicker and can have zero instances running. Flexible always has one running. Prefered standard for spiky or low traffic.     Geographic distribution of Google Cloud services (e.g., latency, regional services, zonal services)  Regions have three or more zones. Those zones have high-bandwidth, low-latency connections. Deploy to multiple zones for high-availability and fault-tolerance. Zonal services: VM instances, GKE Regional clusters. Regional services: Most serverless tech (Cloud Functions, Cloud Run) Static IPs, GKE Zonal clusters. Persistent Disks \u0026 Cloud SQL are zonal, but can sychronously replicate and become regional. Regions and Zones.   Defining a key structure for high-write applications using Cloud Storage, Cloud Bigtable, Cloud Spanner, or Cloud SQL  Cloud Storage: don’t name objects similarly. Cloud Bigtable: one key per table. You can put multiple keys into this one key and seperate them with hashes for more distributed reads. Cloud Spanner: Create second indexes and interleave related records for faster lookups. CloudSQL: Create secondary indexes or clustered indexes.   User session management  Authentication  Integrate Google Sign-in with OAuth 2.0 / OpenID. Better to use a third-party provider.     Caching solutions  Memorystore: managed in-memory caching. Redis \u0026 memcached, so you can read and write from your application code. Cloud CDN: Reduce latency by caching at the edge.   Deploying and securing API services  Secure images  Keep images up-to-date. Consider who you’re trusting. Can do this in CI.   CI  Build, create artifacts, test, run securty checks, deploy.   Design  Use an API schema. Cloud Endpoints / API Gateway: logging, monitoring, API keys, authentication. Cloud Endpoints: runs in Cloud Run, works for most GCP services. API Gateway: managed serverless gateway, simpler to set up.     Loosely coupled asynchronous applications (e.g., Apache Kafka, Pub/Sub)  Decouples application dependency. Great if components fail, you need multiple consumers of data, or an async workflow. Many-to-many, one-to-many, many-to-one patterns. Pull (default): subscriber makes a request to check for new messages. Push: topic hits a HTTP endpoint. Pub/Sub gives you implicit at-least-once delivery per subscription. Use Cloud Tasks for more explicit notification, with retries \u0026 scheduling.   Graceful shutdown on platform termination  Flush logs. Close file descriptors and database connections. GKE: on graceful shutdown, calls a preStop hook - a SIGTERM is recieved - grace period - SIGKILL. Cloud functions: delete any temporary files, as these are stored in memory and can be carried over between runs. Cloud Tech Video: Terminating with Grace (Kubernetes). Docs: Graceful Shutdown on Cloud Run.   Google-recommended practices and documentation  Docs: Patterns for scalable and resilient apps.    1.2 Designing secure applications. Considerations include:\n Implementing requirements that are relevant for applicable regulations (e.g., data wipeout)  Per-industry regulations on data storage regions, encryption and PII. Cloud Data Loss Prevention: discovers and protects sensitive data.   Security mechanisms that protect services and resources  IAM: Divide into folders per-team and a projects per-environment. One project per application per environment. Assign least privilege. VPC Firewall Rules: Direction (ingress/egress), priority (lower number is higher), action (allow/deny), status, target, source, protocol/port.  Helps define what traffic reaches your resources.   VPC Service Controls: Controls ingress and egress for an entire service perimiter, which houses the resources in a project.   Security mechanisms that secure/scan application binaries and manifests  Cloud Web Security Scanner: crawls a site for vulnerabilities. Container Scanning: available on-demand or as part of container registry.   Storing and rotating application secrets and keys (e.g., Cloud KMS, HashiCorp Vault)  Cloud KMS: Integrated with GCP services. Can run cryptographic operations but not actually use the keys. Cloud Secret Manager: Store API keys and credentials you need to download at runtime here. Both do key rotation (limits exposure, shut down keys if they’re exposed).   Authenticating to Google services (e.g., application default credentials, JSON Web Token (JWT), OAuth 2.0)  Application default credentials: credentials from the service account you attached to the service. JWT: alternative to OAuth 2.0 for some GCP APIs. OAuth 2.0: See 4.2.   IAM roles for users/groups/service accounts  Use predefined roles or create custom roles with the permissions you choose. Easily combine roles into a new one from the Cloud Console. Prefer to apply roles to Google groups.   Securing service-to-service communications (e.g., service mesh, Kubernetes Network Policies, and Kubernetes namespaces)  Service mesh: add a sidecar container to pods. Controlls ingress \u0026 egress. Security, load-balancing, traffic control, metrics and more. Kubernetes Network Policies: object that controls ingress and egress from a pod. Specify allowed IP ranges, namespaces and pods.   Running services with least privileged access (e.g., Workload Identity)  Create GCP service accounts to use instead of the Default Compute Service Account. Assign it access to only the services and scope it needs. See 4.2 workload identity.   Certificate-based authentication (e.g., SSL, mTLS)  mTLS  A two-way authentication protocol (mutual TLS). Possible to use mTLS as opposed to service account keys. Automatically done by Istio between GKE pods.   SSL  An encryption protocol required for HTTP(S) and SSL load balancers. Can be Google or self-managed. Docs: SSL certificates overview.     Google-recommended practices and documentation  Docs: Best pratices for enterprise organizations. Whitepaper: Google Cloud security foundations guide.    1.3 Managing application data. Considerations include:\n Defining database schemas for Google-managed databases (e.g., Firestore, Cloud Spanner, Cloud Bigtable, Cloud SQL)  Firestore: schemaless.  ‘Collections’ are a group of related ‘Documents’, which should be kept lightweight. To do this you can define hierarchical subcollections, which are collections associated with a document. Docs: Firestore Data Model.   Datastore:  Entities have a unique key. An entity group is an entity and its descendants. Generally, Firestore (Firestore in native mode) is preferred over Datastore (Firestore in datastore mode).   Cloud SQL: standard DDL. Cloud Spanner: extended DDL, with some extra features including table interleaving.  Docs: Spanner Schema and Data Model   Bigtable: NoSQL (wide, data fields are optional). Broken into column families.  Docs: Bigtable Scema Design.   Also see 1.1 choosing a key structure.   Choosing data storage options based on use case considerations, such as:  Time-limited access to objects  Signed URLs: GCS URLs that provide temporary acccess.   Data retention requirements  Use the GCS storage tiers and Object Lifecycle Management rules to move between them automatically. Object holds (for retention) and policy locks (that can’t be removed). Unmodified BigQuery partitions get a 50% discount after 90 days.   Structured vs. unstructured data  Use GCS for unstructured data.   Strong vs. eventual consistency  Spanner, Firestore for strong consistency.   Data volume - Switch off CloudSQL above the tens of TB mark. Frequency of data access in Cloud Storage  Nearline: 30 days, Coldline: 90 days, Archive: 365 days Storage price goes down, retrieval price goes up.     Google-recommended practices and documentation  Blog: Choosing the right compute option in GCP: a decision tree.    1.4 Application modernization. Considerations include:\n Using managed services  App engine standard: predefined runtimes. App engine flex: any runtime or container. Cloud functions: even-driven model. Cloud run: runs a stateless container.   Refactoring a monolith to microservices  Strangler pattern: abstract and replace component-by-component.   Designing stateless, horizontally scalable services  Split services into a clean seperation of those that are stateless and stateful. Stateless services are easier to scale.   Google-recommended practices and documentation  GCP Application Modernisation DevOps tech: Architecture Aim for statelessness    Section 2: Building and testing applications 2.1 Setting up your local development environment. Considerations include:\n Emulating Google Cloud services for local application development  Use the GCP beta emulators on your local machine for BigTable, Datastore, Firestore, Pub/Sub and Spanner.   Creating Google Cloud projects  Create a Project optionally under a folder, which are optionally under an Organisation Node. Project name: You choose it. Can change it. Project ID: You choose it. Can’t change it. Project number: GCP chooses it. Can’t change it.   Using the command-line interface (CLI), Google Cloud Console, and Cloud Shell tools  CLI: gcloud, gsutil (Cloud Storage), bq (BigQuery), cbt (BigTable) command-line tools. Cloud shell: browser-based CLI and editor.   Using developer tooling (e.g., Cloud Code, Skaffold)  Cloud Code (Skaffold): IDE extension for GCP development (easy deployments to GKE/Cloud Run for example).    2.2 Writing efficient code. Considerations include:\n Algorithm design  Minimise time complexity. Knowledge of basic data structures (linked lists, hash tables, arrays, search trees) and their advantages.   Modern application patterns  12 Factor App   Software development methodologies  Agile  waterfall. Prefer faster deployments and iterations. Test-driven development: write tests before code. Infrastructure as code: define Cloud resource with code.   Debugging and profiling code  See 5.3, Cloud Trace and Cloud Debugger    2.3 Testing. Considerations include:\n Unit testing  Test a component in isolation Find easy-to-spot errors Automate your tests!   Integration testing  Group components together, include dependencies   Performance testing  Measure latency   Load testing  Place under heavy load, maybe for a long period and test scalability    2.4 Building. Considerations include:\n Source control management  Store code with git in Cloud Source Repositories. You can set up Cloud Build triggers to run when changes are pushed to certain branches.   Creating secure container images from code  Add security scanning the CI process. You can add this as a Cloud Build step and call Container Registry on-demand, check the severity level and fail if it’s too high. Use Google’s managed base images, and build on top of those. Jib: creates optimized Docker images from Java applications   Developing a continuous integration pipeline using services (e.g., Cloud Build, Container Registry) that construct deployment artifacts  Cloud Build: fully managed, serverless container building. Can deploy to GCP, can create triggers, configured in YAML.  Each Cloud Build step in a pipeline is a Docker container. Pass data between steps by writing to the /workspace directory.   Spinnaker: CD for compute, containers, multi-cloud. E.g. set up a process for canary deployments. Tekton: CI/CD for k8s. Anthos Config Manager: matches the k8s environment to the config in a repo. Jenkins: Older kitchen sink.   Reviewing and improving continuous integration pipeline efficiency  See DevOps tech: Continious Integration. Metrics include: proportion of commits that trigger a build, test pass rate, build fix time, availability of feedback. Improvements include: increasing velocity of deployments/merges, automation, build duration (   Section 3: Deploying applications 3.1 Recommend appropriate deployment strategies using the appropriate tools (e.g., Cloud Build, Spinnaker, Tekton, Anthos Configuration Manager) for the target compute environment (e.g., Compute Engine, Google Kubernetes Engine). Considerations include:\n Blue/green deployments  Run two deployments at once. Switch the load balancer to the new version. Really easy to switch back if there’s an issue. GKE: Create a new deployment, test, then update the service selector. See Deployment Strategies on GKE.   Traffic-splitting deployments  Useful for A/B testing. Can be done in the console for App Engine. GKE: Use Istio, or deploy some of the pods with the new version. May need session affinity.   Rolling deployments  GCE: Can roll out new instance templates in a MIG. GKE: Apply an updated deployment. Pods will be recreated. Can set a rollingUpdate strategy with a maxUnavailable, and maxSurge (extra pods) to minimise distruption.   Canary deployments  For features that are best tested in prod. GKE: Same as traffic-splitting.    3.2 Deploying applications and services on Compute Engine. Considerations include:\n Installing an application into a virtual machine (VM)  SSH in and install, or use a startup script.   Managing service accounts for VMs  By default, uses the Compute Engine Default Service Account.  Not recommended in pratice: it gives too broad of a permission set (project editor).   Best to create a custom service account.   Bootstrapping applications  Provide a startup \u0026 shutdown script.  Can pass a startup script as a startup-script-url metadata tag, or add it directly.     Exporting application logs and metrics  Install the Cloud Logging agent (Stackdriver). It collects logs from a few standard places, including syslog, by default. The logging standard is fluentd. System metrics (CPU util, networking), are reported to Cloud Monitoring automatically. You can also make your own metrics based on logs.   Managing Compute Engine VM images and binaries  Can create an image based on a VM’s persistent disk, and then re-use it.  You can query the metadata server inside the VM to use as environment variables.   Managed instance groups: create an instance ‘template’ off an image. Autoscales, autoheals and can be used with a load balancer.  Option for stateless/stateful (preserves data)/unmanaged. Can autoheal based on a health check.      3.3 Deploying applications and services to Google Kubernetes Engine (GKE). Considerations include:\n Deploying a containerized application to GKE  Create a deployment based off an image in Container Registry.   Managing Kubernetes RBAC and Google Cloud IAM relationships.  RBAC: A role can perform operations on specific resources. Grant roles to GCP accounts or service accounts. Define a k8s Role object then a RoleBinding one to attach it to the user. Service-to-service IAM  See 4.2 Workload Identity.     Configuring Kubernetes namespaces  Runs in the default namespace by default. Create new ones for environments/teams.   Defining workload specifications (e.g., resource requirements)  Requests: what the container will get (minimum). K8s will only schedule the pod if it can assign enough resources.  If the resource request is larger than what is available on the nodes, the pod will never be scheduled.   Limits: how much resources a container consume before being restricted (maximum).  Memory limits stop the pod with an out of memory error if you run out. CPU limits throttle the pod if you hit the limit.   ResourceQuotas: Maximum combined requests \u0026 limits from a namespace. A common pattern is to have an unbounded resources in prod, and bounded in non-prod. LimitRange: Set the minimum and maximum container limits. Prevents having pods that are too small or too large. Cloud Tech Video: Resource Requests \u0026 Limits If persistent disks are needed, use a StatefulSet.   Building a container image using Cloud Build  Have the Cloud Build YAML build and publish the container to Container Registry.   Configuring application accessibility to user traffic and other services  Check VPC firewall rules, resource region and IAM permissions. Docs: Troubleshooting common networking issues.   Managing container life cycle  Pod state: Pending (being created, waiting for resources) - Running - Succeeded/Failed. Can set a restart policy to recreate if it fails with exponential backoff. Container state: Waiting - Running - Terminated. You can rollback deployments. Probes  LivenessProbe: lets k8s know if the pod is alive or dead. Great at solving deadlocks. ReadinessProbe: probe must pass before traffic is sent to a container. These can be HTTP, TCP or commands that run in the pod. Cloud Tech Video: Kubernetes Health Checks with Readiness and Liveness Probes     Define Kubernetes resources and configurations  Prefer the declarative method: use YAML files and kubectl apply -f.    3.4 Deploying a Cloud Function. Considerations include:\n Cloud Functions that are triggered via an event from Google Cloud services (e.g., Pub/Sub, Cloud Storage objects)  Pub/sub messages, cloud storage uploads, firestore updates are all predefined triggers. Called ‘background functions’. Respond to some data in a context. What’s sent through depends on the event.   Cloud Functions that are invoked via HTTP.  Use the function as a webhook. Easy to integrate with other services (Slack, GitHub). Supports the basic HTTP verbs. Docs: HTTP Functions (Cloud Functions).   Securing Cloud Functions  Perefer IAM. You can assign invoker permissions per-function. You can then send through an OAuth token in the header. If not, use OAuth 2.0. For HTTP functions, consider requiring HTTPS and restricting CORS. VPC: By default allows ingress and egress from the project and internet. You could restrict this. Cloud Functions: Handling CORS Requests Securing Cloud Functions (docs)    3.5 Using service accounts. Considerations include:\n Creating a service account according to the principle of least privilege  See 1.2 Running services with least privilege access.   Downloading and using a service account private key file  Download the JSON key file, but don’t commit it to code (prefer KMS).    Section 4: Integrating Google Cloud services 4.1 Integrating an application with data and storage services. Considerations include:\n Read/write data to/from various databases (e.g., SQL)  Bigquery SQL syntax.   Connecting to a data store (e.g., Cloud SQL, Cloud Spanner, Firestore, Cloud Bigtable)  Cloud SQL: use the Cloud SQL proxy to authenticate yourself with IAM. In GKE, run it in a seperate conatiner in the pod.  You can also use a private IP (available to all services in the VPC) and public IP (whitelist allowed clients).   Firestore: client libraries will update live by default and send diffs. Doesn’t use much power. Video: To Realtime or Not? Use the client libraries. In some environments you can just pick up the service account permissions automatically. Otherwise download the service account credentials (json) and pass them through.   Writing an application that publishes/consumes data asynchronously (e.g., from Pub/Sub)  See 1.1 Loosley Coupled Applications.   Storing and retrieving objects from Cloud Storage  GCS optimisation: batch uploads with -m, object-compose large files, don’t name files similarly, do large reads. Signed URL uploads: request a signed URL to HTTP PUT to. Good for file upload APIs exposed to users. Also see 1.1 Defining a key structure and 1.3.    4.2 Integrating an application with compute services. Considerations include:\n Implementing service discovery in GKE and Compute Engine  GCE: Either use the metadata server, or hit a DNS name from a load balancer. GKE  Endpoints  Connect to an IP via a connection string, as opposed to hard-coding the IP. If it’s a DNS name, use an ExternalName service.   Kubernetes Services  ClusterIP: Expose an IP to the cluster. NodePort: Expose an IP of each node at a specific port. LoadBalancer: Expose externally with a cloud LB.     In GCP, this is a regional network LB. Use an ingress object for a global LB. Cloud Tech Video: Mapping External Services (Kubernetes).   Reading instance metadata to obtain application configuration  You can hit the metadata server with HTTP and recieve key-value pairs. Pass metadata value into start-up scripts to avoid brittle designs.   Authenticating users by using OAuth2.0 Web Flow and Identity-Aware Proxy  Identity-Aware Proxy: auth (Google sign-in) + authorization (IAM) for GCP services. Oauth 2.0 Flow: request a token or authorization code (that can later be used to request a token) from Google. The user sees a prompt for consent. If they accept, you get a token you can send in the auth header of API calls.   Authenticating to Cloud APIs with Workload Identity  A GKE concept to link Kubernetes service accounts with Google ones. Setup steps: create the service accounts, apply the roles and a policy binding to the Google one, annotate the Kubernetes one.    4.3 Integrating Cloud APIs with applications. Considerations include:\n Enabling a Cloud API  gcloud services enable or via the Console.   Making API calls using supported options (e.g., Cloud Client Library, REST API or gRPC, APIs Explorer) taking into consideration:  Batching requests  Pub/Sub, GCS, DataFlow and more support batch ingestion.   Restricting return data  Use an API schema.   Paginating results  User asks for a page in the request. Design APIs with this from the beginning. Docs: API Design Patterns.   Caching results  See 1.1 Caching Solutions.   Error handling (e.g., exponential backoff)  Exponential backoff: limit to a point. Only retry on transient errors (too many requests, timeouts), not errors that won’t change between runs (authentication issues). The client APIs automatically backoff exponentially. Docs: Retry Strategy.     Using service accounts to make Cloud API calls  See 1.2 Running services with least privlidged access.    Section 5: Managing application performance monitoring 5.1 Managing Compute Engine VMs. Considerations include:\n Debugging a custom VM image using the serial port  Serial port logs are useful for crashes, failed boots, startup issues, or shutdown issues. You can set an instance metadata flag to send these logs to Cloud Logging.   Diagnosing a failed Compute Engine VM startup  Common problems: invalid startup script, insufficent access to start up script (e.g. GCS permissions), network tags. Common MIG problems: invalid templates (image does not exist), assigning a disk to multiple VMs to write, failing health-check (network tags).   Sending logs from a VM to Cloud Logging  See 3.2.   Viewing and analyzing logs  See 3.2.   Inspecting resource utilization over time  See 3.2.    5.2 Managing Google Kubernetes Engine workloads. Considerations include:\n Configuring logging and monitoring  System and app logs are sent by default. Prometheus is a monitoring agent for Kubernetes that runs as a sidecar pod.   Analyzing container life cycle events (e.g., CrashLoopBackOff, ImagePullErr)  ErrImagePull: Couldn’t get the container image from the registry (doesn’t exist, invalid tag). ImagePullBackOff: Didn’t have permission to get the container image. CrashLoopBackOff: Pod failed to create even after the restart policy (container or configuration bug).   Viewing and analyzing logs  Full support for the entire operations suite (Logging, Monitoring, Trace, etc).   Writing and exporting custom metrics  Install the Custom Metrics Adapter to the cluster. Modify app code to export a metric. You can also set up uptime checks and process health checks from within Cloud Monitoring.   Using external metrics and corresponding alerts  Can autoscale on metrics from other GCP services.   Configuring workload autoscaling  Set up a HorizontalPodAutoscaler object based on a metric (existing, custom or external). Changes the number of pods running the workload. Vertical Pod Autoscaler. Changes the resources given to pods. If you want to use both, use Multidimensional Pod Autoscaling. Cluster autoscaling  Cluster autoscaler. Changes the number of nodes in the cluster. Node Auto Provisioner. Changes the resources given to nodes.   Cloud Tech Video: Introduction to GKE Autoscaling.    5.3 Troubleshooting application performance. Considerations include:\n Creating a monitoring dashboard  GCE/GKE dashboard by default. Can create your own dashboard with metrics.   Writing custom metrics and creating log-based metrics  Custom metrics: set up the descriptor then write it to the logging agent. Logs-based metrics: set up in Cloud Logging.   Using Cloud Debugger  Injects snapshots (breakpoints) and log points (to Cloud Logging, without updating app code) into long-running applications.   Reviewing stack traces for error analysis  Error Reporting: holds error logs and groups them up per-issue.   Exporting logs from Google Cloud  Log sinks: sends to the default logs bucket, and can be configured to send to other sinks (BigQuery, Pub/Sub, other buckets).   Viewing logs in the Google Cloud Console  Types of logs  Platform logs. User logs (e.g. GCE logging agent logs). Security logs, includes audit logs (system logs, admin activities) and access transparency logs (GCP staff working on your project). Kept for 400 days. Multi-cloud logs (e.g. AWS logs).   Logs explorer (in the console): build a query, visualise.   Reviewing application performance (e.g., Cloud Trace, Prometheus, OpenTelemetry)  Open Telemetry/Open Census/GCP Client libraries send telemetry to Cloud Trace. Helps you track round-trip-time around the entire tech stack, visualised in spans. Can evaluate responsiveness, identify bottlenecks.   Monitoring and profiling a running application  Cloud Monitoring workspace runs in a host project. Resources have default metrics. Alerting: notifications based on metrics. Cloud Monitoring uptime checks: hit an endpoint, verify certificate, can do auth.   Using documentation, forums, and Google Cloud support  GCP quotas are increased by raising a request with GCP. For example, quotas apply to VM numbers and the CPUs/GPUs/Disks that are attached to them.    ","wordCount":"4008","inLanguage":"en","datePublished":"2021-11-24T16:28:15+10:00","dateModified":"2021-11-24T16:28:15+10:00","author":{"@type":"Person","name":"Matt Lui"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://mattlui.com/posts/pcd-notes/"},"publisher":{"@type":"Organization","name":"Matt Lui","logo":{"@type":"ImageObject","url":"https://mattlui.com/%3Clink%20/%20abs%20url%3E"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Google Cloud Professional Cloud Developer Study Guide Notes","name":"Google Cloud Professional Cloud Developer Study Guide Notes","description":"Complete Professional Cloud Developer notes built around the official study guide for the exam.","keywords":[],"articleBody":"The Professional Cloud Developer exam covers a large, possibly unbounded, amount of content. These notes were built to cover every topic Google has suggested can be on the exam.\nThe notes have a grey background, and each correspond to one of the ninity-one dot-points in the official GCP Professional Cloud Developer Study Guide. All outbound links refer to Google Cloud documentation.\nEverything’s been sourced from A Cloud Guru, Google Cloud Training on Coursera or the Google Cloud Docs themselves.\nTable of contents  Section 1: Designing highly scalable, available, and reliable cloud-native applications Section 2: Building and testing applications Section 3: Deploying applications Section 4: Integrating Google Cloud services Section 5: Managing application performance monitoring  Section 1: Designing highly scalable, available, and reliable cloud-native applications 1.1 Designing high-performing applications and APIs. Considerations include:\n Microservices   Microservices refers to an architectural style for developing applications. Microservices allow a large application to be decomposed into independent constituent parts, with each part having its own realm of responsibility. Benefits  Smaller, more modular codebase and deployments. A/B releases, independent development cycles for each service. Simplifies tangled dependencies. Stronger contracts between services. Easier to split up testing, cost accounting, logging and monitoring.   On App Engine, deploy a service per microservice.    Scaling velocity characteristics/trade-offs of IaaS (infrastructure as a service) vs. CaaS (container as a service) vs. PaaS (platform as a service)   Tradeoffs  IaaS (Compute Engine) PaaS (App Engine / GKE) CaaS (Cloud Run) FaaS (Cloud Functions)   Scalability  Serverless applications can scale quickly and you only pay for what you use (e.g. Cloud Run, Cloud Functions, App Engine). Aim for stateless microservices. You want to minimize start-up time for scalability. Create images, use containers or improve the app. With containers, use smaller base images (Alpine) and the builder pattern to minimize their size. See 5.2 GKE Autoscaling. GCE can autoscale managed instance groups. App Engine Flexible vs Standard: Standard spins up instances quicker and can have zero instances running. Flexible always has one running. Prefered standard for spiky or low traffic.      Geographic distribution of Google Cloud services (e.g., latency, regional services, zonal services)   Regions have three or more zones. Those zones have high-bandwidth, low-latency connections. Deploy to multiple zones for high-availability and fault-tolerance. Zonal services: VM instances, GKE Regional clusters. Regional services: Most serverless tech (Cloud Functions, Cloud Run) Static IPs, GKE Zonal clusters. Persistent Disks \u0026 Cloud SQL are zonal, but can sychronously replicate and become regional. Regions and Zones.    Defining a key structure for high-write applications using Cloud Storage, Cloud Bigtable, Cloud Spanner, or Cloud SQL   Cloud Storage: don’t name objects similarly. Cloud Bigtable: one key per table. You can put multiple keys into this one key and seperate them with hashes for more distributed reads. Cloud Spanner: Create second indexes and interleave related records for faster lookups. CloudSQL: Create secondary indexes or clustered indexes.    User session management   Authentication  Integrate Google Sign-in with OAuth 2.0 / OpenID. Better to use a third-party provider.      Caching solutions   Memorystore: managed in-memory caching. Redis \u0026 memcached, so you can read and write from your application code. Cloud CDN: Reduce latency by caching at the edge.    Deploying and securing API services   Secure images  Keep images up-to-date. Consider who you’re trusting. Can do this in CI.   CI  Build, create artifacts, test, run securty checks, deploy.   Design  Use an API schema. Cloud Endpoints / API Gateway: logging, monitoring, API keys, authentication. Cloud Endpoints: runs in Cloud Run, works for most GCP services. API Gateway: managed serverless gateway, simpler to set up.      Loosely coupled asynchronous applications (e.g., Apache Kafka, Pub/Sub)   Decouples application dependency. Great if components fail, you need multiple consumers of data, or an async workflow. Many-to-many, one-to-many, many-to-one patterns. Pull (default): subscriber makes a request to check for new messages. Push: topic hits a HTTP endpoint. Pub/Sub gives you implicit at-least-once delivery per subscription. Use Cloud Tasks for more explicit notification, with retries \u0026 scheduling.    Graceful shutdown on platform termination   Flush logs. Close file descriptors and database connections. GKE: on graceful shutdown, calls a preStop hook - a SIGTERM is recieved - grace period - SIGKILL. Cloud functions: delete any temporary files, as these are stored in memory and can be carried over between runs. Cloud Tech Video: Terminating with Grace (Kubernetes). Docs: Graceful Shutdown on Cloud Run.    Google-recommended practices and documentation   Docs: Patterns for scalable and resilient apps.   1.2 Designing secure applications. Considerations include:\n Implementing requirements that are relevant for applicable regulations (e.g., data wipeout)   Per-industry regulations on data storage regions, encryption and PII. Cloud Data Loss Prevention: discovers and protects sensitive data.    Security mechanisms that protect services and resources   IAM: Divide into folders per-team and a projects per-environment. One project per application per environment. Assign least privilege. VPC Firewall Rules: Direction (ingress/egress), priority (lower number is higher), action (allow/deny), status, target, source, protocol/port.  Helps define what traffic reaches your resources.   VPC Service Controls: Controls ingress and egress for an entire service perimiter, which houses the resources in a project.    Security mechanisms that secure/scan application binaries and manifests   Cloud Web Security Scanner: crawls a site for vulnerabilities. Container Scanning: available on-demand or as part of container registry.    Storing and rotating application secrets and keys (e.g., Cloud KMS, HashiCorp Vault)   Cloud KMS: Integrated with GCP services. Can run cryptographic operations but not actually use the keys. Cloud Secret Manager: Store API keys and credentials you need to download at runtime here. Both do key rotation (limits exposure, shut down keys if they’re exposed).    Authenticating to Google services (e.g., application default credentials, JSON Web Token (JWT), OAuth 2.0)   Application default credentials: credentials from the service account you attached to the service. JWT: alternative to OAuth 2.0 for some GCP APIs. OAuth 2.0: See 4.2.    IAM roles for users/groups/service accounts   Use predefined roles or create custom roles with the permissions you choose. Easily combine roles into a new one from the Cloud Console. Prefer to apply roles to Google groups.    Securing service-to-service communications (e.g., service mesh, Kubernetes Network Policies, and Kubernetes namespaces)   Service mesh: add a sidecar container to pods. Controlls ingress \u0026 egress. Security, load-balancing, traffic control, metrics and more. Kubernetes Network Policies: object that controls ingress and egress from a pod. Specify allowed IP ranges, namespaces and pods.    Running services with least privileged access (e.g., Workload Identity)   Create GCP service accounts to use instead of the Default Compute Service Account. Assign it access to only the services and scope it needs. See 4.2 workload identity.    Certificate-based authentication (e.g., SSL, mTLS)   mTLS  A two-way authentication protocol (mutual TLS). Possible to use mTLS as opposed to service account keys. Automatically done by Istio between GKE pods.   SSL  An encryption protocol required for HTTP(S) and SSL load balancers. Can be Google or self-managed. Docs: SSL certificates overview.      Google-recommended practices and documentation   Docs: Best pratices for enterprise organizations. Whitepaper: Google Cloud security foundations guide.   1.3 Managing application data. Considerations include:\n Defining database schemas for Google-managed databases (e.g., Firestore, Cloud Spanner, Cloud Bigtable, Cloud SQL)   Firestore: schemaless.  ‘Collections’ are a group of related ‘Documents’, which should be kept lightweight. To do this you can define hierarchical subcollections, which are collections associated with a document. Docs: Firestore Data Model.   Datastore:  Entities have a unique key. An entity group is an entity and its descendants. Generally, Firestore (Firestore in native mode) is preferred over Datastore (Firestore in datastore mode).   Cloud SQL: standard DDL. Cloud Spanner: extended DDL, with some extra features including table interleaving.  Docs: Spanner Schema and Data Model   Bigtable: NoSQL (wide, data fields are optional). Broken into column families.  Docs: Bigtable Scema Design.   Also see 1.1 choosing a key structure.    Choosing data storage options based on use case considerations, such as:   Time-limited access to objects Signed URLs: GCS URLs that provide temporary acccess.    Data retention requirements   Use the GCS storage tiers and Object Lifecycle Management rules to move between them automatically. Object holds (for retention) and policy locks (that can’t be removed). Unmodified BigQuery partitions get a 50% discount after 90 days.    Structured vs. unstructured data   Use GCS for unstructured data.    Strong vs. eventual consistency   Spanner, Firestore for strong consistency.    Data volume   Switch off CloudSQL above the tens of TB mark. Frequency of data access in Cloud Storage Nearline: 30 days, Coldline: 90 days, Archive: 365 days Storage price goes down, retrieval price goes up.    Google-recommended practices and documentation   Blog: Choosing the right compute option in GCP: a decision tree.   1.4 Application modernization. Considerations include:\n Using managed services   App engine standard: predefined runtimes. App engine flex: any runtime or container. Cloud functions: even-driven model. Cloud run: runs a stateless container.    Refactoring a monolith to microservices   Strangler pattern: abstract and replace component-by-component.    Designing stateless, horizontally scalable services   Split services into a clean seperation of those that are stateless and stateful. Stateless services are easier to scale.    Google-recommended practices and documentation   GCP Application Modernisation DevOps tech: Architecture Aim for statelessness   Section 2: Building and testing applications 2.1 Setting up your local development environment. Considerations include:\n Emulating Google Cloud services for local application development   Use the GCP beta emulators on your local machine for BigTable, Datastore, Firestore, Pub/Sub and Spanner.    Creating Google Cloud projects   Create a Project optionally under a folder, which are optionally under an Organisation Node. Project name: You choose it. Can change it. Project ID: You choose it. Can’t change it. Project number: GCP chooses it. Can’t change it.    Using the command-line interface (CLI), Google Cloud Console, and Cloud Shell tools   CLI: gcloud, gsutil (Cloud Storage), bq (BigQuery), cbt (BigTable) command-line tools. Cloud shell: browser-based CLI and editor.    Using developer tooling (e.g., Cloud Code, Skaffold)   Cloud Code (Skaffold): IDE extension for GCP development (easy deployments to GKE/Cloud Run for example).   2.2 Writing efficient code. Considerations include:\n Algorithm design   Minimise time complexity. Knowledge of basic data structures (linked lists, hash tables, arrays, search trees) and their advantages.    Modern application patterns   12 Factor App    Software development methodologies   Agile  waterfall. Prefer faster deployments and iterations. Test-driven development: write tests before code. Infrastructure as code: define Cloud resource with code.    Debugging and profiling code   See 5.3, Cloud Trace and Cloud Debugger.   2.3 Testing. Considerations include:\n Unit testing   Test a component in isolation. Find easy-to-spot errors. Automate your tests!    Integration testing   Group components together, include dependencies.    Performance testing   Measure latency.    Load testing   Place under heavy load, maybe for a long period and test scalability.   2.4 Building. Considerations include:\n Source control management   Store code with git in Cloud Source Repositories. You can set up Cloud Build triggers to run when changes are pushed to certain branches.    Creating secure container images from code   Add security scanning the CI process. You can add this as a Cloud Build step and call Container Registry on-demand, check the severity level and fail if it’s too high. Use Google’s managed base images, and build on top of those. Jib: creates optimized Docker images from Java applications    Developing a continuous integration pipeline using services (e.g., Cloud Build, Container Registry) that construct deployment artifacts   Cloud Build: fully managed, serverless container building. Can deploy to GCP, can create triggers, configured in YAML.  Each Cloud Build step in a pipeline is a Docker container. Pass data between steps by writing to the /workspace directory.   Spinnaker: CD for compute, containers, multi-cloud. E.g. set up a process for canary deployments. Tekton: CI/CD for k8s. Anthos Config Manager: matches the k8s environment to the config in a repo. Jenkins: Older kitchen sink.    Reviewing and improving continuous integration pipeline efficiency   See DevOps tech: Continious Integration. Metrics include: proportion of commits that trigger a build, test pass rate, build fix time, availability of feedback. Improvements include: increasing velocity of deployments/merges, automation, build duration (  Section 3: Deploying applications 3.1 Recommend appropriate deployment strategies using the appropriate tools (e.g., Cloud Build, Spinnaker, Tekton, Anthos Configuration Manager) for the target compute environment (e.g., Compute Engine, Google Kubernetes Engine). Considerations include:\n Blue/green deployments   Run two deployments at once. Switch the load balancer to the new version. Really easy to switch back if there’s an issue. GKE: Create a new deployment, test, then update the service selector. See Deployment Strategies on GKE.    Traffic-splitting deployments   Useful for A/B testing. Can be done in the console for App Engine. GKE: Use Istio, or deploy some of the pods with the new version. May need session affinity.    Rolling deployments   GCE: Can roll out new instance templates in a MIG. GKE: Apply an updated deployment. Pods will be recreated. Can set a rollingUpdate strategy with a maxUnavailable, and maxSurge (extra pods) to minimise distruption.    Canary deployments   For features that are best tested in prod. GKE: Same as traffic-splitting.   3.2 Deploying applications and services on Compute Engine. Considerations include:\n Installing an application into a virtual machine (VM)   SSH in and install, or use a startup script.    Managing service accounts for VMs   By default, uses the Compute Engine Default Service Account.  Not recommended in pratice: it gives too broad of a permission set (project editor).   Best to create a custom service account.    Bootstrapping applications   Provide a startup \u0026 shutdown script.  Can pass a startup script as a startup-script-url metadata tag, or add it directly.      Exporting application logs and metrics   Install the Cloud Logging agent (Stackdriver). It collects logs from a few standard places, including syslog, by default. The logging standard is fluentd. System metrics (CPU util, networking), are reported to Cloud Monitoring automatically. You can also make your own metrics based on logs.    Managing Compute Engine VM images and binaries   Can create an image based on a VM’s persistent disk, and then re-use it.  You can query the metadata server inside the VM to use as environment variables.   Managed instance groups: create an instance ‘template’ off an image. Autoscales, autoheals and can be used with a load balancer.  Option for stateless/stateful (preserves data)/unmanaged. Can autoheal based on a health check.     3.3 Deploying applications and services to Google Kubernetes Engine (GKE). Considerations include:\n Deploying a containerized application to GKE   Create a deployment based off an image in Container Registry.    Managing Kubernetes RBAC and Google Cloud IAM relationships.   RBAC: A role can perform operations on specific resources. Grant roles to GCP accounts or service accounts. Define a k8s Role object then a RoleBinding one to attach it to the user. Service-to-service IAM  See 4.2 Workload Identity.      Configuring Kubernetes namespaces   Runs in the default namespace by default. Create new ones for environments/teams.    Defining workload specifications (e.g., resource requirements)   Requests: what the container will get (minimum). K8s will only schedule the pod if it can assign enough resources.  If the resource request is larger than what is available on the nodes, the pod will never be scheduled.   Limits: how much resources a container consume before being restricted (maximum).  Memory limits stop the pod with an out of memory error if you run out. CPU limits throttle the pod if you hit the limit.   ResourceQuotas: Maximum combined requests \u0026 limits from a namespace. A common pattern is to have an unbounded resources in prod, and bounded in non-prod. LimitRange: Set the minimum and maximum container limits. Prevents having pods that are too small or too large. Cloud Tech Video: Resource Requests \u0026 Limits If persistent disks are needed, use a StatefulSet.    Building a container image using Cloud Build   Have the Cloud Build YAML build and publish the container to Container Registry.    Configuring application accessibility to user traffic and other services   Check VPC firewall rules, resource region and IAM permissions. Docs: Troubleshooting common networking issues.    Managing container life cycle   Pod state: Pending (being created, waiting for resources) - Running - Succeeded/Failed. Can set a restart policy to recreate if it fails with exponential backoff. Container state: Waiting - Running - Terminated. You can rollback deployments. Probes  LivenessProbe: lets k8s know if the pod is alive or dead. Great at solving deadlocks. ReadinessProbe: probe must pass before traffic is sent to a container. These can be HTTP, TCP or commands that run in the pod. Cloud Tech Video: Kubernetes Health Checks with Readiness and Liveness Probes      Define Kubernetes resources and configurations   Prefer the declarative method: use YAML files and kubectl apply -f.   3.4 Deploying a Cloud Function. Considerations include:\n Cloud Functions that are triggered via an event from Google Cloud services (e.g., Pub/Sub, Cloud Storage objects)   Pub/sub messages, cloud storage uploads, firestore updates are all predefined triggers. Called ‘background functions’. Respond to some data in a context. What’s sent through depends on the event.    Cloud Functions that are invoked via HTTP.   Use the function as a webhook. Easy to integrate with other services (Slack, GitHub). Supports the basic HTTP verbs. Docs: HTTP Functions (Cloud Functions).    Securing Cloud Functions   Perefer IAM. You can assign invoker permissions per-function. You can then send through an OAuth token in the header. If not, use OAuth 2.0. For HTTP functions, consider requiring HTTPS and restricting CORS. VPC: By default allows ingress and egress from the project and internet. You could restrict this. Cloud Functions: Handling CORS Requests Securing Cloud Functions (docs)   3.5 Using service accounts. Considerations include:\n Creating a service account according to the principle of least privilege   See 1.2 Running services with least privilege access.    Downloading and using a service account private key file   Download the JSON key file, but don’t commit it to code (prefer KMS).   Section 4: Integrating Google Cloud services 4.1 Integrating an application with data and storage services. Considerations include:\n Read/write data to/from various databases (e.g., SQL)   Bigquery SQL syntax.    Connecting to a data store (e.g., Cloud SQL, Cloud Spanner, Firestore, Cloud Bigtable)   Cloud SQL: use the Cloud SQL proxy to authenticate yourself with IAM. In GKE, run it in a seperate conatiner in the pod.  You can also use a private IP (available to all services in the VPC) and public IP (whitelist allowed clients).   Firestore: client libraries will update live by default and send diffs. Doesn’t use much power. Video: To Realtime or Not? Use the client libraries. In some environments you can just pick up the service account permissions automatically. Otherwise download the service account credentials (json) and pass them through.    Writing an application that publishes/consumes data asynchronously (e.g., from Pub/Sub)   See 1.1 Loosley Coupled Applications.    Storing and retrieving objects from Cloud Storage   GCS optimisation: batch uploads with -m, object-compose large files, don’t name files similarly, do large reads. Signed URL uploads: request a signed URL to HTTP PUT to. Good for file upload APIs exposed to users. Also see 1.1 Defining a key structure and 1.3.   4.2 Integrating an application with compute services. Considerations include:\n Implementing service discovery in GKE and Compute Engine   GCE: Either use the metadata server, or hit a DNS name from a load balancer. GKE  Endpoints  Connect to an IP via a connection string, as opposed to hard-coding the IP. If it’s a DNS name, use an ExternalName service.   Kubernetes Services 1. ClusterIP: Expose an IP to the cluster. 2. NodePort: Expose an IP of each node at a specific port. 3. LoadBalancer: Expose externally with a cloud LB. In GCP, this is a regional network LB. Use an ingress object for a global LB. Cloud Tech Video: Mapping External Services (Kubernetes).   Reading instance metadata to obtain application configuration You can hit the metadata server with HTTP and recieve key-value pairs. Pass metadata value into start-up scripts to avoid brittle designs.    Authenticating users by using OAuth2.0 Web Flow and Identity-Aware Proxy   Identity-Aware Proxy: auth (Google sign-in) + authorization (IAM) for GCP services. Oauth 2.0 Flow: request a token or authorization code (that can later be used to request a token) from Google. The user sees a prompt for consent. If they accept, you get a token you can send in the auth header of API calls.    Authenticating to Cloud APIs with Workload Identity   A GKE concept to link Kubernetes service accounts with Google ones. Setup steps: create the service accounts, apply the roles and a policy binding to the Google one, annotate the Kubernetes one.   4.3 Integrating Cloud APIs with applications. Considerations include:\n Enabling a Cloud API   gcloud services enable or via the Console.     Making API calls using supported options (e.g., Cloud Client Library, REST API or gRPC, APIs Explorer) taking into consideration:\n  Batching requests\n   Pub/Sub, GCS, DataFlow and more support batch ingestion.    Restricting return data   Use an API schema.    Paginating results   User asks for a page in the request. Design APIs with this from the beginning. Docs: API Design Patterns.    Caching results   See 1.1 Caching Solutions.    Error handling (e.g., exponential backoff)   Exponential backoff: limit to a point. Only retry on transient errors (too many requests, timeouts), not errors that won’t change between runs (authentication issues). The client APIs automatically backoff exponentially. Docs: Retry Strategy.    Using service accounts to make Cloud API calls   See 1.2 Running services with least privlidged access.   Section 5: Managing application performance monitoring 5.1 Managing Compute Engine VMs. Considerations include:\n Debugging a custom VM image using the serial port   Serial port logs are useful for crashes, failed boots, startup issues, or shutdown issues. You can set an instance metadata flag to send these logs to Cloud Logging.    Diagnosing a failed Compute Engine VM startup   Common problems: invalid startup script, insufficent access to start up script (e.g. GCS permissions), network tags. Common MIG problems: invalid templates (image does not exist), assigning a disk to multiple VMs to write, failing health-check (network tags).    Sending logs from a VM to Cloud Logging   See 3.2.    Viewing and analyzing logs   See 3.2.    Inspecting resource utilization over time   See 3.2.   5.2 Managing Google Kubernetes Engine workloads. Considerations include:\n Configuring logging and monitoring   System and app logs are sent by default. Prometheus is a monitoring agent for Kubernetes that runs as a sidecar pod.    Analyzing container life cycle events (e.g., CrashLoopBackOff, ImagePullErr)   ErrImagePull: Couldn’t get the container image from the registry (doesn’t exist, invalid tag). ImagePullBackOff: Didn’t have permission to get the container image. CrashLoopBackOff: Pod failed to create even after the restart policy (container or configuration bug).    Viewing and analyzing logs   Full support for the entire operations suite (Logging, Monitoring, Trace, etc).    Writing and exporting custom metrics   Install the Custom Metrics Adapter to the cluster. Modify app code to export a metric. You can also set up uptime checks and process health checks from within Cloud Monitoring.    Using external metrics and corresponding alerts   Can autoscale on metrics from other GCP services.    Configuring workload autoscaling   Set up a HorizontalPodAutoscaler object based on a metric (existing, custom or external). Changes the number of pods running the workload. Vertical Pod Autoscaler. Changes the resources given to pods. If you want to use both, use Multidimensional Pod Autoscaling. Cluster autoscaling  Cluster autoscaler. Changes the number of nodes in the cluster. Node Auto Provisioner. Changes the resources given to nodes.   Cloud Tech Video: Introduction to GKE Autoscaling.   5.3 Troubleshooting application performance. Considerations include:\n Creating a monitoring dashboard   GCE/GKE dashboard by default. Can create your own dashboard with metrics.    Writing custom metrics and creating log-based metrics   Custom metrics: set up the descriptor then write it to the logging agent. Logs-based metrics: set up in Cloud Logging.    Using Cloud Debugger   Injects snapshots (breakpoints) and log points (to Cloud Logging, without updating app code) into long-running applications.    Reviewing stack traces for error analysis   Error Reporting: holds error logs and groups them up per-issue.    Exporting logs from Google Cloud   Log sinks: sends to the default logs bucket, and can be configured to send to other sinks (BigQuery, Pub/Sub, other buckets).    Viewing logs in the Google Cloud Console   Types of logs  Platform logs. User logs (e.g. GCE logging agent logs). Security logs, includes audit logs (system logs, admin activities) and access transparency logs (GCP staff working on your project). Kept for 400 days. Multi-cloud logs (e.g. AWS logs).   Logs explorer (in the console): build a query, visualise.    Reviewing application performance (e.g., Cloud Trace, Prometheus, OpenTelemetry)   Open Telemetry/Open Census/GCP Client libraries send telemetry to Cloud Trace. Helps you track round-trip-time around the entire tech stack, visualised in spans. Can evaluate responsiveness, identify bottlenecks.    Monitoring and profiling a running application   Cloud Monitoring workspace runs in a host project. Resources have default metrics. Alerting: notifications based on metrics. Cloud Monitoring uptime checks: hit an endpoint, verify certificate, can do auth.    Using documentation, forums, and Google Cloud support   GCP quotas are increased by raising a request with GCP. For example, quotas apply to VM numbers and the CPUs/GPUs/Disks that are attached to them.  ","wordCount":"4022","inLanguage":"en","datePublished":"2021-11-24T16:28:15+10:00","dateModified":"2021-11-24T16:28:15+10:00","author":{"@type":"Person","name":"Matt Lui"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://mattlui.com/posts/pcd-notes/"},"publisher":{"@type":"Organization","name":"Matt Lui","logo":{"@type":"ImageObject","url":"https://mattlui.com/%3Clink%20/%20abs%20url%3E"}}}</script>
 </head>
 <body id=top>
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script>
-<noscript>
-<style type=text/css>#theme-toggle,.top-link{display:none}</style>
-<style>@media(prefers-color-scheme:dark){:root{--theme:#1d1e20;--entry:#2e2e33;--primary:rgba(255, 255, 255, 0.84);--secondary:rgba(255, 255, 255, 0.56);--tertiary:rgba(255, 255, 255, 0.16);--content:rgba(255, 255, 255, 0.74);--hljs-bg:#2e2e33;--code-bg:#37383e;--border:#333}.list{background:var(--theme)}.list:not(.dark)::-webkit-scrollbar-track{background:0 0}.list:not(.dark)::-webkit-scrollbar-thumb{border-color:var(--theme)}}</style>
-</noscript>
 <header class=header>
 <nav class=nav>
 <div class=logo>
@@ -69,11 +59,14 @@ Table of contents  Section 1: Designing highly scalable, available, and reliable
 <h1 class=post-title>
 Google Cloud Professional Cloud Developer Study Guide Notes
 </h1>
-<div class=post-meta>November 24, 2021&nbsp;·&nbsp;19 min&nbsp;·&nbsp;Matt Lui&nbsp;|&nbsp;<a href=https://github.com/gamma032steam/gamma032steam.github.io/tree/main/content/posts/pcd-notes.md rel="noopener noreferrer" target=_blank>Suggest Changes</a>
+<div class=post-description>
+Complete Professional Cloud Developer notes built around the official study guide for the exam.
+</div>
+<div class=post-meta><span title="2021-11-24 16:28:15 +1000 +1000">November 24, 2021</span>&nbsp;·&nbsp;19 min&nbsp;·&nbsp;Matt Lui&nbsp;|&nbsp;<a href=https://github.com/gamma032steam/gamma032steam.github.io/tree/main/content/posts/pcd-notes.md rel="noopener noreferrer" target=_blank>Suggest Changes</a>
 </div>
 </header>
-<div class=post-content><p>The Professional Cloud Developer exam covers a large, possibly unbounded, amount of content. These notes seek to encapsulate, or at least link out to, everything examinable.</p>
-<p>The notes have a grey background, and each correspond to one of the ninity-one dot-points in the <a href=https://cloud.google.com/certification/guides/cloud-developer>GCP Professional Cloud Developer Study Guide</a>.</p>
+<div class=post-content><p>The Professional Cloud Developer exam covers a large, possibly unbounded, amount of content. These notes were built to cover every topic Google has suggested can be on the exam.</p>
+<p>The notes have a grey background, and each correspond to one of the ninity-one dot-points in the official <a href=https://cloud.google.com/certification/guides/cloud-developer>GCP Professional Cloud Developer Study Guide</a>. All outbound links refer to Google Cloud documentation.</p>
 <p>Everything&rsquo;s been sourced from <a href=https://acloudguru.com/>A Cloud Guru</a>, <a href=https://www.coursera.org/learn/gcp-fundamentals>Google Cloud Training on Coursera</a> or the <a href=https://cloud.google.com/docs>Google Cloud Docs</a> themselves.</p>
 <h2 id=table-of-contents>Table of contents<a hidden class=anchor aria-hidden=true href=#table-of-contents>#</a></h2>
 <ul>
@@ -86,7 +79,9 @@ Google Cloud Professional Cloud Developer Study Guide Notes
 <h2 id=section-1-designing-highly-scalable-available-and-reliable-cloud-native-applications>Section 1: Designing highly scalable, available, and reliable cloud-native applications<a hidden class=anchor aria-hidden=true href=#section-1-designing-highly-scalable-available-and-reliable-cloud-native-applications>#</a></h2>
 <p>1.1 Designing high-performing applications and APIs. Considerations include:</p>
 <ul>
-<li>Microservices
+<li>Microservices</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li><a href=https://cloud.google.com/appengine/docs/standard/python/microservices-on-app-engine><em>Microservices</em></a> refers to an architectural style for developing applications. Microservices allow a large application to be decomposed into independent constituent parts, with each part having its own realm of responsibility.</li>
 <li>Benefits
@@ -99,8 +94,11 @@ Google Cloud Professional Cloud Developer Study Guide Notes
 </li>
 <li>On App Engine, deploy a service per microservice.</li>
 </ul>
-</li>
-<li>Scaling velocity characteristics/trade-offs of IaaS (infrastructure as a service) vs. CaaS (container as a service) vs. PaaS (platform as a service)
+</blockquote>
+<ul>
+<li>Scaling velocity characteristics/trade-offs of IaaS (infrastructure as a service) vs. CaaS (container as a service) vs. PaaS (platform as a service)</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Tradeoffs
 <ul>
@@ -122,8 +120,11 @@ Google Cloud Professional Cloud Developer Study Guide Notes
 </ul>
 </li>
 </ul>
-</li>
-<li>Geographic distribution of Google Cloud services (e.g., latency, regional services, zonal services)
+</blockquote>
+<ul>
+<li>Geographic distribution of Google Cloud services (e.g., latency, regional services, zonal services)</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Regions have three or more zones. Those zones have high-bandwidth, low-latency connections.</li>
 <li>Deploy to multiple zones for high-availability and fault-tolerance.</li>
@@ -132,16 +133,22 @@ Google Cloud Professional Cloud Developer Study Guide Notes
 <li>Persistent Disks & Cloud SQL are zonal, but can sychronously replicate and become regional.</li>
 <li><a href=https://cloud.google.com/compute/docs/regions-zones>Regions and Zones</a>.</li>
 </ul>
-</li>
-<li>Defining a key structure for high-write applications using Cloud Storage, Cloud Bigtable, Cloud Spanner, or Cloud SQL
+</blockquote>
+<ul>
+<li>Defining a key structure for high-write applications using Cloud Storage, Cloud Bigtable, Cloud Spanner, or Cloud SQL</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Cloud Storage: don&rsquo;t name objects similarly.</li>
 <li>Cloud Bigtable: one key per table. You can put multiple keys into this one key and seperate them with hashes for more distributed reads.</li>
 <li>Cloud Spanner: Create second indexes and interleave related records for faster lookups.</li>
 <li>CloudSQL: Create secondary indexes or clustered indexes.</li>
 </ul>
-</li>
-<li>User session management
+</blockquote>
+<ul>
+<li>User session management</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Authentication
 <ul>
@@ -150,14 +157,20 @@ Google Cloud Professional Cloud Developer Study Guide Notes
 </ul>
 </li>
 </ul>
-</li>
-<li>Caching solutions
+</blockquote>
+<ul>
+<li>Caching solutions</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Memorystore: managed in-memory caching. Redis & memcached, so you can read and write from your application code.</li>
 <li>Cloud CDN: Reduce latency by caching at the edge.</li>
 </ul>
-</li>
-<li>Deploying and securing API services
+</blockquote>
+<ul>
+<li>Deploying and securing API services</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Secure images
 <ul>
@@ -180,8 +193,11 @@ Google Cloud Professional Cloud Developer Study Guide Notes
 </ul>
 </li>
 </ul>
-</li>
-<li>Loosely coupled asynchronous applications (e.g., Apache Kafka, Pub/Sub)
+</blockquote>
+<ul>
+<li>Loosely coupled asynchronous applications (e.g., Apache Kafka, Pub/Sub)</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Decouples application dependency. Great if components fail, you need multiple consumers of data, or an async workflow.</li>
 <li>Many-to-many, one-to-many, many-to-one patterns.</li>
@@ -190,8 +206,11 @@ Google Cloud Professional Cloud Developer Study Guide Notes
 <li>Pub/Sub gives you implicit at-least-once delivery per subscription.</li>
 <li>Use Cloud Tasks for more explicit notification, with retries & scheduling.</li>
 </ul>
-</li>
-<li>Graceful shutdown on platform termination
+</blockquote>
+<ul>
+<li>Graceful shutdown on platform termination</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Flush logs.</li>
 <li>Close file descriptors and database connections.</li>
@@ -200,22 +219,29 @@ Google Cloud Professional Cloud Developer Study Guide Notes
 <li><a href=https://youtu.be/Z_l_kE1MDTc>Cloud Tech Video: Terminating with Grace (Kubernetes)</a>.</li>
 <li><a href=https://cloud.google.com/blog/topics/developers-practitioners/graceful-shutdowns-cloud-run-deep-dive>Docs: Graceful Shutdown on Cloud Run</a>.</li>
 </ul>
-</li>
-<li>Google-recommended practices and documentation
+</blockquote>
+<ul>
+<li>Google-recommended practices and documentation</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li><a href=https://cloud.google.com/architecture/scalable-and-resilient-apps>Docs: Patterns for scalable and resilient apps</a>.</li>
 </ul>
-</li>
-</ul>
+</blockquote>
 <p>1.2 Designing secure applications. Considerations include:</p>
 <ul>
-<li>Implementing requirements that are relevant for applicable regulations (e.g., data wipeout)
+<li>Implementing requirements that are relevant for applicable regulations (e.g., data wipeout)</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Per-industry regulations on data storage regions, encryption and PII.</li>
 <li>Cloud Data Loss Prevention: discovers and protects sensitive data.</li>
 </ul>
-</li>
-<li>Security mechanisms that protect services and resources
+</blockquote>
+<ul>
+<li>Security mechanisms that protect services and resources</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>IAM: Divide into folders per-team and a projects per-environment. One project per application per environment. Assign least privilege.</li>
 <li>VPC Firewall Rules: Direction (ingress/egress), priority (lower number is higher), action (allow/deny), status, target, source, protocol/port.
@@ -225,47 +251,68 @@ Google Cloud Professional Cloud Developer Study Guide Notes
 </li>
 <li>VPC Service Controls: Controls ingress and egress for an entire service perimiter, which houses the resources in a project.</li>
 </ul>
-</li>
-<li>Security mechanisms that secure/scan application binaries and manifests
+</blockquote>
+<ul>
+<li>Security mechanisms that secure/scan application binaries and manifests</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Cloud Web Security Scanner: crawls a site for vulnerabilities.</li>
 <li><a href=https://cloud.google.com/container-analysis/docs/container-scanning-overview>Container Scanning</a>: available on-demand or as part of container registry.</li>
 </ul>
-</li>
-<li>Storing and rotating application secrets and keys (e.g., Cloud KMS, HashiCorp Vault)
+</blockquote>
+<ul>
+<li>Storing and rotating application secrets and keys (e.g., Cloud KMS, HashiCorp Vault)</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Cloud KMS: Integrated with GCP services. Can run cryptographic operations but not actually use the keys.</li>
 <li>Cloud Secret Manager: Store API keys and credentials you need to download at runtime here.</li>
 <li>Both do key rotation (limits exposure, shut down keys if they&rsquo;re exposed).</li>
 </ul>
-</li>
-<li>Authenticating to Google services (e.g., application default credentials, JSON Web Token (JWT), OAuth 2.0)
+</blockquote>
+<ul>
+<li>Authenticating to Google services (e.g., application default credentials, JSON Web Token (JWT), OAuth 2.0)</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Application default credentials: credentials from the service account you attached to the service.</li>
 <li>JWT: alternative to OAuth 2.0 for some GCP APIs.</li>
 <li>OAuth 2.0: See 4.2.</li>
 </ul>
-</li>
-<li>IAM roles for users/groups/service accounts
+</blockquote>
+<ul>
+<li>IAM roles for users/groups/service accounts</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Use predefined roles or create custom roles with the permissions you choose.</li>
 <li>Easily combine roles into a new one from the Cloud Console.</li>
 <li>Prefer to apply roles to Google groups.</li>
 </ul>
-</li>
-<li>Securing service-to-service communications (e.g., service mesh, Kubernetes Network Policies, and Kubernetes namespaces)
+</blockquote>
+<ul>
+<li>Securing service-to-service communications (e.g., service mesh, Kubernetes Network Policies, and Kubernetes namespaces)</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Service mesh: add a sidecar container to pods. Controlls ingress & egress. Security, load-balancing, traffic control, metrics and more.</li>
 <li><a href=https://kubernetes.io/docs/concepts/services-networking/network-policies/>Kubernetes Network Policies</a>: object that controls ingress and egress from a pod. Specify allowed IP ranges, namespaces and pods.</li>
 </ul>
-</li>
-<li>Running services with least privileged access (e.g., Workload Identity)
+</blockquote>
+<ul>
+<li>Running services with least privileged access (e.g., Workload Identity)</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Create GCP service accounts to use instead of the Default Compute Service Account. Assign it access to only the services and scope it needs.</li>
 <li>See 4.2 workload identity.</li>
 </ul>
-</li>
-<li>Certificate-based authentication (e.g., SSL, mTLS)
+</blockquote>
+<ul>
+<li>Certificate-based authentication (e.g., SSL, mTLS)</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>mTLS
 <ul>
@@ -281,17 +328,21 @@ Google Cloud Professional Cloud Developer Study Guide Notes
 </ul>
 </li>
 </ul>
-</li>
-<li>Google-recommended practices and documentation
+</blockquote>
+<ul>
+<li>Google-recommended practices and documentation</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li><a href=https://cloud.google.com/docs/enterprise/best-practices-for-enterprise-organizations>Docs: Best pratices for enterprise organizations</a>.</li>
 <li><a href=https://services.google.com/fh/files/misc/google-cloud-security-foundations-guide.pdf>Whitepaper: Google Cloud security foundations guide</a>.</li>
 </ul>
-</li>
-</ul>
+</blockquote>
 <p>1.3 Managing application data. Considerations include:</p>
 <ul>
-<li>Defining database schemas for Google-managed databases (e.g., Firestore, Cloud Spanner, Cloud Bigtable, Cloud SQL)
+<li>Defining database schemas for Google-managed databases (e.g., Firestore, Cloud Spanner, Cloud Bigtable, Cloud SQL)</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Firestore: schemaless.
 <ul>
@@ -319,170 +370,232 @@ Google Cloud Professional Cloud Developer Study Guide Notes
 </li>
 <li>Also see 1.1 choosing a key structure.</li>
 </ul>
-</li>
-<li>Choosing data storage options based on use case considerations, such as:
+</blockquote>
 <ul>
-<li>Time-limited access to objects
+<li>Choosing data storage options based on use case considerations, such as:</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
+<li>Time-limited access to objects</li>
 <li><a href=https://cloud.google.com/storage/docs/access-control/signed-urls>Signed URLs</a>: GCS URLs that provide temporary acccess.</li>
 </ul>
-</li>
-<li>Data retention requirements
+</blockquote>
+<ul>
+<li>Data retention requirements</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Use the GCS storage tiers and Object Lifecycle Management rules to move between them automatically.</li>
 <li>Object holds (for retention) and policy locks (that can&rsquo;t be removed).</li>
 <li>Unmodified BigQuery partitions get a 50% discount after 90 days.</li>
 </ul>
-</li>
-<li>Structured vs. unstructured data
+</blockquote>
+<ul>
+<li>Structured vs. unstructured data</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Use GCS for unstructured data.</li>
 </ul>
-</li>
-<li>Strong vs. eventual consistency
+</blockquote>
+<ul>
+<li>Strong vs. eventual consistency</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Spanner, Firestore for strong consistency.</li>
 </ul>
-</li>
-<li>Data volume
-- Switch off CloudSQL above the tens of TB mark.</li>
-<li>Frequency of data access in Cloud Storage
+</blockquote>
 <ul>
+<li>Data volume</li>
+</ul>
+<blockquote class=pcd-note>
+<ul>
+<li>Switch off CloudSQL above the tens of TB mark.</li>
+<li>Frequency of data access in Cloud Storage</li>
 <li>Nearline: 30 days, Coldline: 90 days, Archive: 365 days</li>
 <li>Storage price goes down, retrieval price goes up.</li>
 </ul>
-</li>
+</blockquote>
+<ul>
+<li>Google-recommended practices and documentation</li>
 </ul>
-</li>
-<li>Google-recommended practices and documentation
+<blockquote class=pcd-note>
 <ul>
 <li><a href=https://cloud.google.com/blog/products/compute/choosing-the-right-compute-option-in-gcp-a-decision-tree>Blog: Choosing the right compute option in GCP: a decision tree</a>.</li>
 </ul>
-</li>
-</ul>
+</blockquote>
 <p>1.4 Application modernization. Considerations include:</p>
 <ul>
-<li>Using managed services
+<li>Using managed services</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>App engine standard: predefined runtimes.</li>
 <li>App engine flex: any runtime or container.</li>
 <li>Cloud functions: even-driven model.</li>
 <li>Cloud run: runs a stateless container.</li>
 </ul>
-</li>
-<li>Refactoring a monolith to microservices
+</blockquote>
+<ul>
+<li>Refactoring a monolith to microservices</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Strangler pattern: abstract and replace component-by-component.</li>
 </ul>
-</li>
-<li>Designing stateless, horizontally scalable services
+</blockquote>
+<ul>
+<li>Designing stateless, horizontally scalable services</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Split services into a clean seperation of those that are stateless and stateful. Stateless services are easier to scale.</li>
 </ul>
-</li>
-<li>Google-recommended practices and documentation
+</blockquote>
+<ul>
+<li>Google-recommended practices and documentation</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li><a href=https://cloud.google.com/solutions/application-modernization>GCP Application Modernisation</a></li>
 <li><a href=https://cloud.google.com/architecture/devops/devops-tech-architecture>DevOps tech: Architecture</a></li>
 <li><a href=https://cloud.google.com/architecture/scalable-and-resilient-apps#aim_for_statelessness>Aim for statelessness</a></li>
 </ul>
-</li>
-</ul>
+</blockquote>
 <h2 id=section-2-building-and-testing-applications>Section 2: Building and testing applications<a hidden class=anchor aria-hidden=true href=#section-2-building-and-testing-applications>#</a></h2>
 <p>2.1 Setting up your local development environment. Considerations include:</p>
 <ul>
-<li>Emulating Google Cloud services for local application development
+<li>Emulating Google Cloud services for local application development</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Use the <a href=https://cloud.google.com/sdk/gcloud/reference/beta/emulators>GCP beta emulators</a> on your local machine for BigTable, Datastore, Firestore, Pub/Sub and Spanner.</li>
 </ul>
-</li>
-<li>Creating Google Cloud projects
+</blockquote>
+<ul>
+<li>Creating Google Cloud projects</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Create a Project optionally under a folder, which are optionally under an Organisation Node.</li>
 <li>Project name: You choose it. Can change it.</li>
 <li>Project ID: You choose it. Can&rsquo;t change it.</li>
 <li>Project number: GCP chooses it. Can&rsquo;t change it.</li>
 </ul>
-</li>
-<li>Using the command-line interface (CLI), Google Cloud Console, and Cloud Shell tools
+</blockquote>
+<ul>
+<li>Using the command-line interface (CLI), Google Cloud Console, and Cloud Shell tools</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>CLI: gcloud, gsutil (Cloud Storage), bq (BigQuery), cbt (BigTable) command-line tools.</li>
 <li>Cloud shell: browser-based CLI and editor.</li>
 </ul>
-</li>
-<li>Using developer tooling (e.g., Cloud Code, Skaffold)
+</blockquote>
+<ul>
+<li>Using developer tooling (e.g., Cloud Code, Skaffold)</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Cloud Code (Skaffold): IDE extension for GCP development (easy deployments to GKE/Cloud Run for example).</li>
 </ul>
-</li>
-</ul>
+</blockquote>
 <p>2.2 Writing efficient code. Considerations include:</p>
 <ul>
-<li>Algorithm design
+<li>Algorithm design</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Minimise time complexity.</li>
 <li>Knowledge of basic data structures (linked lists, hash tables, arrays, search trees) and their advantages.</li>
 </ul>
-</li>
-<li>Modern application patterns
+</blockquote>
+<ul>
+<li>Modern application patterns</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li><a href=https://12factor.net/>12 Factor App</a></li>
 </ul>
-</li>
-<li>Software development methodologies
+</blockquote>
+<ul>
+<li>Software development methodologies</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Agile > waterfall.</li>
 <li>Prefer faster deployments and iterations.</li>
 <li>Test-driven development: write tests before code.</li>
 <li>Infrastructure as code: define Cloud resource with code.</li>
 </ul>
-</li>
-<li>Debugging and profiling code
+</blockquote>
 <ul>
-<li>See 5.3, Cloud Trace and Cloud Debugger</li>
+<li>Debugging and profiling code</li>
 </ul>
-</li>
+<blockquote class=pcd-note>
+<ul>
+<li>See 5.3, Cloud Trace and Cloud Debugger.</li>
 </ul>
+</blockquote>
 <p>2.3 Testing. Considerations include:</p>
 <ul>
-<li>Unit testing
+<li>Unit testing</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
-<li>Test a component in isolation</li>
-<li>Find easy-to-spot errors</li>
+<li>Test a component in isolation.</li>
+<li>Find easy-to-spot errors.</li>
 <li>Automate your tests!</li>
 </ul>
-</li>
-<li>Integration testing
+</blockquote>
 <ul>
-<li>Group components together, include dependencies</li>
+<li>Integration testing</li>
 </ul>
-</li>
-<li>Performance testing
+<blockquote class=pcd-note>
 <ul>
-<li>Measure latency</li>
+<li>Group components together, include dependencies.</li>
 </ul>
-</li>
-<li>Load testing
+</blockquote>
 <ul>
-<li>Place under heavy load, maybe for a long period and test scalability</li>
+<li>Performance testing</li>
 </ul>
-</li>
+<blockquote class=pcd-note>
+<ul>
+<li>Measure latency.</li>
 </ul>
+</blockquote>
+<ul>
+<li>Load testing</li>
+</ul>
+<blockquote class=pcd-note>
+<ul>
+<li>Place under heavy load, maybe for a long period and test scalability.</li>
+</ul>
+</blockquote>
 <p>2.4 Building. Considerations include:</p>
 <ul>
-<li>Source control management
+<li>Source control management</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Store code with git in Cloud Source Repositories. You can set up Cloud Build triggers to run when changes are pushed to certain branches.</li>
 </ul>
-</li>
-<li>Creating secure container images from code
+</blockquote>
+<ul>
+<li>Creating secure container images from code</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Add security scanning the CI process. You can add this as a Cloud Build step and call Container Registry on-demand, check the severity level and fail if it&rsquo;s too high.</li>
 <li>Use Google&rsquo;s managed base images, and build on top of those.</li>
 <li><a href=https://github.com/GoogleContainerTools/jib>Jib</a>: creates optimized Docker images from Java applications</li>
 </ul>
-</li>
-<li>Developing a continuous integration pipeline using services (e.g., Cloud Build, Container Registry) that construct deployment artifacts
+</blockquote>
+<ul>
+<li>Developing a continuous integration pipeline using services (e.g., Cloud Build, Container Registry) that construct deployment artifacts</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Cloud Build: fully managed, serverless container building. Can deploy to GCP, can create triggers, configured in YAML.
 <ul>
@@ -495,52 +608,69 @@ Google Cloud Professional Cloud Developer Study Guide Notes
 <li>Anthos Config Manager: matches the k8s environment to the config in a repo.</li>
 <li>Jenkins: Older kitchen sink.</li>
 </ul>
-</li>
-<li>Reviewing and improving continuous integration pipeline efficiency
+</blockquote>
+<ul>
+<li>Reviewing and improving continuous integration pipeline efficiency</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>See <a href=https://cloud.google.com/architecture/devops/devops-tech-continuous-integration>DevOps tech: Continious Integration</a>.</li>
 <li>Metrics include: proportion of commits that trigger a build, test pass rate, build fix time, availability of feedback.</li>
 <li>Improvements include: increasing velocity of deployments/merges, automation, build duration (&lt; 10 minutes), broken builds/tests, pulling in code outside the repo.</li>
 </ul>
-</li>
-</ul>
+</blockquote>
 <h2 id=section-3-deploying-applications>Section 3: Deploying applications<a hidden class=anchor aria-hidden=true href=#section-3-deploying-applications>#</a></h2>
 <p>3.1 Recommend appropriate deployment strategies using the appropriate tools (e.g., Cloud Build, Spinnaker, Tekton, Anthos Configuration Manager) for the target compute environment (e.g., Compute Engine, Google Kubernetes Engine). Considerations include:</p>
 <ul>
-<li>Blue/green deployments
+<li>Blue/green deployments</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Run two deployments at once. Switch the load balancer to the new version. Really easy to switch back if there&rsquo;s an issue.</li>
 <li>GKE: Create a new deployment, test, then update the service selector. See <a href=https://cloud.google.com/architecture/implementing-deployment-and-testing-strategies-on-gke>Deployment Strategies on GKE</a>.</li>
 </ul>
-</li>
-<li>Traffic-splitting deployments
+</blockquote>
+<ul>
+<li>Traffic-splitting deployments</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Useful for A/B testing.</li>
 <li>Can be done in the console for App Engine.</li>
 <li>GKE: Use Istio, or deploy some of the pods with the new version. May need session affinity.</li>
 </ul>
-</li>
-<li>Rolling deployments
+</blockquote>
+<ul>
+<li>Rolling deployments</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>GCE: Can roll out new instance templates in a MIG.</li>
 <li>GKE: Apply an updated deployment. Pods will be recreated. Can set a rollingUpdate strategy with a maxUnavailable, and maxSurge (extra pods) to minimise distruption.</li>
 </ul>
-</li>
-<li>Canary deployments
+</blockquote>
+<ul>
+<li>Canary deployments</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>For features that are best tested in prod.</li>
 <li>GKE: Same as traffic-splitting.</li>
 </ul>
-</li>
-</ul>
+</blockquote>
 <p>3.2 Deploying applications and services on Compute Engine. Considerations include:</p>
 <ul>
-<li>Installing an application into a virtual machine (VM)
+<li>Installing an application into a virtual machine (VM)</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>SSH in and install, or use a startup script.</li>
 </ul>
-</li>
-<li>Managing service accounts for VMs
+</blockquote>
+<ul>
+<li>Managing service accounts for VMs</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>By default, uses the Compute Engine Default Service Account.
 <ul>
@@ -549,8 +679,11 @@ Google Cloud Professional Cloud Developer Study Guide Notes
 </li>
 <li>Best to create a custom service account.</li>
 </ul>
-</li>
-<li>Bootstrapping applications
+</blockquote>
+<ul>
+<li>Bootstrapping applications</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Provide a startup & shutdown script.
 <ul>
@@ -558,14 +691,20 @@ Google Cloud Professional Cloud Developer Study Guide Notes
 </ul>
 </li>
 </ul>
-</li>
-<li>Exporting application logs and metrics
+</blockquote>
+<ul>
+<li>Exporting application logs and metrics</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Install the Cloud Logging agent (Stackdriver). It collects logs from a few standard places, including syslog, by default. The logging standard is fluentd.</li>
 <li>System metrics (CPU util, networking), are reported to Cloud Monitoring automatically. You can also make your own metrics based on logs.</li>
 </ul>
-</li>
-<li>Managing Compute Engine VM images and binaries
+</blockquote>
+<ul>
+<li>Managing Compute Engine VM images and binaries</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Can create an image based on a VM&rsquo;s persistent disk, and then re-use it.
 <ul>
@@ -579,16 +718,20 @@ Google Cloud Professional Cloud Developer Study Guide Notes
 </ul>
 </li>
 </ul>
-</li>
-</ul>
+</blockquote>
 <p>3.3 Deploying applications and services to Google Kubernetes Engine (GKE). Considerations include:</p>
 <ul>
-<li>Deploying a containerized application to GKE
+<li>Deploying a containerized application to GKE</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Create a deployment based off an image in Container Registry.</li>
 </ul>
-</li>
-<li>Managing Kubernetes RBAC and Google Cloud IAM relationships.
+</blockquote>
+<ul>
+<li>Managing Kubernetes RBAC and Google Cloud IAM relationships.</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li><a href=https://cloud.google.com/kubernetes-engine/docs/how-to/role-based-access-control>RBAC</a>: A role can perform operations on specific resources.</li>
 <li>Grant roles to GCP accounts or service accounts. Define a k8s Role object then a RoleBinding one to attach it to the user.</li>
@@ -598,14 +741,20 @@ Google Cloud Professional Cloud Developer Study Guide Notes
 </ul>
 </li>
 </ul>
-</li>
-<li>Configuring Kubernetes namespaces
+</blockquote>
+<ul>
+<li>Configuring Kubernetes namespaces</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Runs in the default namespace by default.</li>
 <li>Create new ones for environments/teams.</li>
 </ul>
-</li>
-<li>Defining workload specifications (e.g., resource requirements)
+</blockquote>
+<ul>
+<li>Defining workload specifications (e.g., resource requirements)</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Requests: what the container will get (minimum). K8s will only schedule the pod if it can assign enough resources.
 <ul>
@@ -623,19 +772,28 @@ Google Cloud Professional Cloud Developer Study Guide Notes
 <li><a href="https://www.youtube.com/watch?v=xjpHggHKm78">Cloud Tech Video: Resource Requests & Limits</a></li>
 <li>If persistent disks are needed, use a <code>StatefulSet</code>.</li>
 </ul>
-</li>
-<li>Building a container image using Cloud Build
+</blockquote>
+<ul>
+<li>Building a container image using Cloud Build</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Have the Cloud Build YAML build and publish the container to Container Registry.</li>
 </ul>
-</li>
-<li>Configuring application accessibility to user traffic and other services
+</blockquote>
+<ul>
+<li>Configuring application accessibility to user traffic and other services</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Check VPC firewall rules, resource region and IAM permissions.</li>
 <li><a href=https://cloud.google.com/compute/docs/troubleshooting/troubleshooting-networking>Docs: Troubleshooting common networking issues</a>.</li>
 </ul>
-</li>
-<li>Managing container life cycle
+</blockquote>
+<ul>
+<li>Managing container life cycle</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Pod state: Pending (being created, waiting for resources) -> Running -> Succeeded/Failed.</li>
 <li>Can set a restart policy to recreate if it fails with exponential backoff.</li>
@@ -650,29 +808,39 @@ Google Cloud Professional Cloud Developer Study Guide Notes
 </ul>
 </li>
 </ul>
-</li>
-<li>Define Kubernetes resources and configurations
+</blockquote>
+<ul>
+<li>Define Kubernetes resources and configurations</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Prefer the declarative method: use YAML files and <code>kubectl apply -f</code>.</li>
 </ul>
-</li>
-</ul>
+</blockquote>
 <p>3.4 Deploying a Cloud Function. Considerations include:</p>
 <ul>
-<li>Cloud Functions that are triggered via an event from Google Cloud services (e.g., Pub/Sub, Cloud Storage objects)
+<li>Cloud Functions that are triggered via an event from Google Cloud services (e.g., Pub/Sub, Cloud Storage objects)</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Pub/sub messages, cloud storage uploads, firestore updates are all predefined triggers. Called &lsquo;background functions&rsquo;.</li>
 <li>Respond to some data in a context. What&rsquo;s sent through depends on the event.</li>
 </ul>
-</li>
-<li>Cloud Functions that are invoked via HTTP.
+</blockquote>
+<ul>
+<li>Cloud Functions that are invoked via HTTP.</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Use the function as a webhook. Easy to integrate with other services (Slack, GitHub).</li>
 <li>Supports the basic HTTP verbs.</li>
 <li><a href=https://cloud.google.com/functions/docs/writing/http>Docs: HTTP Functions (Cloud Functions)</a>.</li>
 </ul>
-</li>
-<li>Securing Cloud Functions
+</blockquote>
+<ul>
+<li>Securing Cloud Functions</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Perefer IAM. You can assign invoker permissions per-function. You can then send through an OAuth token in the header.</li>
 <li>If not, use OAuth 2.0.</li>
@@ -681,30 +849,38 @@ Google Cloud Professional Cloud Developer Study Guide Notes
 <li><a href=https://cloud.google.com/functions/docs/writing/http#preflight_request>Cloud Functions: Handling CORS Requests</a></li>
 <li><a href=https://cloud.google.com/functions/docs/securing>Securing Cloud Functions (docs)</a></li>
 </ul>
-</li>
-</ul>
+</blockquote>
 <p>3.5 Using service accounts. Considerations include:</p>
 <ul>
-<li>Creating a service account according to the principle of least privilege
+<li>Creating a service account according to the principle of least privilege</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>See 1.2 Running services with least privilege access.</li>
 </ul>
-</li>
-<li>Downloading and using a service account private key file
+</blockquote>
+<ul>
+<li>Downloading and using a service account private key file</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Download the JSON key file, but don&rsquo;t commit it to code (prefer KMS).</li>
 </ul>
-</li>
-</ul>
+</blockquote>
 <h2 id=section-4-integrating-google-cloud-services>Section 4: Integrating Google Cloud services<a hidden class=anchor aria-hidden=true href=#section-4-integrating-google-cloud-services>#</a></h2>
 <p>4.1 Integrating an application with data and storage services. Considerations include:</p>
 <ul>
-<li>Read/write data to/from various databases (e.g., SQL)
+<li>Read/write data to/from various databases (e.g., SQL)</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li><a href=https://cloud.google.com/bigquery/docs/reference/standard-sql/query-syntax>Bigquery SQL syntax</a>.</li>
 </ul>
-</li>
-<li>Connecting to a data store (e.g., Cloud SQL, Cloud Spanner, Firestore, Cloud Bigtable)
+</blockquote>
+<ul>
+<li>Connecting to a data store (e.g., Cloud SQL, Cloud Spanner, Firestore, Cloud Bigtable)</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Cloud SQL: use the <a href=https://cloud.google.com/sql/docs/mysql/sql-proxy>Cloud SQL proxy</a> to authenticate yourself with IAM. In GKE, run it in a seperate conatiner in the pod.
 <ul>
@@ -714,23 +890,30 @@ Google Cloud Professional Cloud Developer Study Guide Notes
 <li>Firestore: client libraries will update live by default and send diffs. Doesn&rsquo;t use much power. <a href="https://www.youtube.com/watch?v=3aoxOtMM2rc">Video: To Realtime or Not?</a></li>
 <li>Use the client libraries. In some environments you can just pick up the service account permissions automatically. Otherwise download the service account credentials (json) and pass them through.</li>
 </ul>
-</li>
-<li>Writing an application that publishes/consumes data asynchronously (e.g., from Pub/Sub)
+</blockquote>
+<ul>
+<li>Writing an application that publishes/consumes data asynchronously (e.g., from Pub/Sub)</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>See 1.1 Loosley Coupled Applications.</li>
 </ul>
-</li>
-<li>Storing and retrieving objects from Cloud Storage
+</blockquote>
+<ul>
+<li>Storing and retrieving objects from Cloud Storage</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li><a href=https://cloud.google.com/blog/products/gcp/optimizing-your-cloud-storage-performance-google-cloud-performance-atlas>GCS optimisation</a>: batch uploads with <code>-m</code>, object-compose large files, don&rsquo;t name files similarly, do large reads.</li>
 <li>Signed URL uploads: request a signed URL to HTTP PUT to. Good for file upload APIs exposed to users.</li>
 <li>Also see 1.1 Defining a key structure and 1.3.</li>
 </ul>
-</li>
-</ul>
+</blockquote>
 <p>4.2 Integrating an application with compute services. Considerations include:</p>
 <ul>
-<li>Implementing service discovery in GKE and Compute Engine
+<li>Implementing service discovery in GKE and Compute Engine</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>GCE: Either use the metadata server, or hit a DNS name from a load balancer.</li>
 <li>GKE
@@ -742,145 +925,194 @@ Google Cloud Professional Cloud Developer Study Guide Notes
 </ul>
 </li>
 <li>Kubernetes Services
-<ol>
-<li><code>ClusterIP</code>: Expose an IP to the cluster.</li>
-<li><code>NodePort</code>: Expose an IP of each node at a specific port.</li>
-<li><code>LoadBalancer</code>: Expose externally with a cloud LB.</li>
-</ol>
-</li>
-</ul>
-</li>
+1. <code>ClusterIP</code>: Expose an IP to the cluster.
+2. <code>NodePort</code>: Expose an IP of each node at a specific port.
+3. <code>LoadBalancer</code>: Expose externally with a cloud LB.</li>
 <li>In GCP, this is a regional network LB. Use an ingress object for a global LB.</li>
 <li><a href=https://youtu.be/fvpq4jqtuZ8>Cloud Tech Video: Mapping External Services (Kubernetes)</a>.</li>
 </ul>
 </li>
-<li>Reading instance metadata to obtain application configuration
-<ul>
+<li>Reading instance metadata to obtain application configuration</li>
 <li>You can hit the metadata server with HTTP and recieve key-value pairs.</li>
 <li>Pass metadata value into start-up scripts to avoid brittle designs.</li>
 </ul>
-</li>
-<li>Authenticating users by using OAuth2.0 Web Flow and Identity-Aware Proxy
+</blockquote>
+<ul>
+<li>Authenticating users by using OAuth2.0 Web Flow and Identity-Aware Proxy</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li><a href=https://cloud.google.com/iap/docs/concepts-overview>Identity-Aware Proxy</a>: auth (Google sign-in) + authorization (IAM) for GCP services.</li>
 <li><a href=https://developers.google.com/identity/protocols/oauth2>Oauth 2.0 Flow</a>: request a token or authorization code (that can later be used to request a token) from Google. The user sees a prompt for consent. If they accept, you get a token you can send in the auth header of API calls.</li>
 </ul>
-</li>
-<li>Authenticating to Cloud APIs with Workload Identity
+</blockquote>
+<ul>
+<li>Authenticating to Cloud APIs with Workload Identity</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>A GKE concept to link Kubernetes service accounts with Google ones.</li>
 <li><a href=https://cloud.google.com/kubernetes-engine/docs/how-to/workload-identity>Setup steps</a>: create the service accounts, apply the roles and a policy binding to the Google one, annotate the Kubernetes one.</li>
 </ul>
-</li>
-</ul>
+</blockquote>
 <p>4.3 Integrating Cloud APIs with applications. Considerations include:</p>
 <ul>
-<li>Enabling a Cloud API
+<li>Enabling a Cloud API</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li><code>gcloud services enable</code> or via the Console.</li>
 </ul>
-</li>
-<li>Making API calls using supported options (e.g., Cloud Client Library, REST API or gRPC, APIs Explorer) taking into consideration:
+</blockquote>
 <ul>
-<li>Batching requests
+<li>
+<p>Making API calls using supported options (e.g., Cloud Client Library, REST API or gRPC, APIs Explorer) taking into consideration:</p>
+</li>
+<li>
+<p>Batching requests</p>
+</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Pub/Sub, GCS, DataFlow and more support batch ingestion.</li>
 </ul>
-</li>
-<li>Restricting return data
+</blockquote>
+<ul>
+<li>Restricting return data</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Use an API schema.</li>
 </ul>
-</li>
-<li>Paginating results
+</blockquote>
+<ul>
+<li>Paginating results</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>User asks for a page in the request. Design APIs with this from the beginning.</li>
 <li><a href=https://cloud.google.com/apis/design/design_patterns#list_pagination>Docs: API Design Patterns</a>.</li>
 </ul>
-</li>
-<li>Caching results
+</blockquote>
+<ul>
+<li>Caching results</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>See 1.1 Caching Solutions.</li>
 </ul>
-</li>
-<li>Error handling (e.g., exponential backoff)
+</blockquote>
+<ul>
+<li>Error handling (e.g., exponential backoff)</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Exponential backoff: limit to a point. Only retry on transient errors (too many requests, timeouts), not errors that won&rsquo;t change between runs (authentication issues).</li>
 <li>The client APIs automatically backoff exponentially.</li>
 <li><a href=https://cloud.google.com/storage/docs/retry-strategy>Docs: Retry Strategy</a>.</li>
 </ul>
-</li>
+</blockquote>
+<ul>
+<li>Using service accounts to make Cloud API calls</li>
 </ul>
-</li>
-<li>Using service accounts to make Cloud API calls
+<blockquote class=pcd-note>
 <ul>
 <li>See 1.2 Running services with least privlidged access.</li>
 </ul>
-</li>
-</ul>
+</blockquote>
 <h2 id=section-5-managing-application-performance-monitoring>Section 5: Managing application performance monitoring<a hidden class=anchor aria-hidden=true href=#section-5-managing-application-performance-monitoring>#</a></h2>
 <p>5.1 Managing Compute Engine VMs. Considerations include:</p>
 <ul>
-<li>Debugging a custom VM image using the serial port
+<li>Debugging a custom VM image using the serial port</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Serial port logs are useful for crashes, failed boots, startup issues, or shutdown issues.</li>
 <li>You can set an instance metadata flag to send these logs to Cloud Logging.</li>
 </ul>
-</li>
-<li>Diagnosing a failed Compute Engine VM startup
+</blockquote>
+<ul>
+<li>Diagnosing a failed Compute Engine VM startup</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Common problems: invalid startup script, insufficent access to start up script (e.g. GCS permissions), network tags.</li>
 <li>Common MIG problems: invalid templates (image does not exist), assigning a disk to multiple VMs to write, failing health-check (network tags).</li>
 </ul>
-</li>
-<li>Sending logs from a VM to Cloud Logging
+</blockquote>
+<ul>
+<li>Sending logs from a VM to Cloud Logging</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>See 3.2.</li>
 </ul>
-</li>
-<li>Viewing and analyzing logs
+</blockquote>
+<ul>
+<li>Viewing and analyzing logs</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>See 3.2.</li>
 </ul>
-</li>
-<li>Inspecting resource utilization over time
+</blockquote>
+<ul>
+<li>Inspecting resource utilization over time</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>See 3.2.</li>
 </ul>
-</li>
-</ul>
+</blockquote>
 <p>5.2 Managing Google Kubernetes Engine workloads. Considerations include:</p>
 <ul>
-<li>Configuring logging and monitoring
+<li>Configuring logging and monitoring</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>System and app logs are sent by default.</li>
 <li><a href=https://cloud.google.com/stackdriver/docs/solutions/gke/prometheus>Prometheus</a> is a monitoring agent for Kubernetes that runs as a sidecar pod.</li>
 </ul>
-</li>
-<li>Analyzing container life cycle events (e.g., CrashLoopBackOff, ImagePullErr)
+</blockquote>
+<ul>
+<li>Analyzing container life cycle events (e.g., CrashLoopBackOff, ImagePullErr)</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>ErrImagePull: Couldn&rsquo;t get the container image from the registry (doesn&rsquo;t exist, invalid tag).</li>
 <li>ImagePullBackOff: Didn&rsquo;t have permission to get the container image.</li>
 <li>CrashLoopBackOff: Pod failed to create even after the restart policy (container or configuration bug).</li>
 </ul>
-</li>
-<li>Viewing and analyzing logs
+</blockquote>
+<ul>
+<li>Viewing and analyzing logs</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Full support for the entire operations suite (Logging, Monitoring, Trace, etc).</li>
 </ul>
-</li>
-<li>Writing and exporting custom metrics
+</blockquote>
+<ul>
+<li>Writing and exporting custom metrics</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Install the Custom Metrics Adapter to the cluster. Modify app code to export a metric.</li>
 <li>You can also set up uptime checks and process health checks from within Cloud Monitoring.</li>
 </ul>
-</li>
-<li>Using external metrics and corresponding alerts
+</blockquote>
+<ul>
+<li>Using external metrics and corresponding alerts</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Can autoscale on metrics from other GCP services.</li>
 </ul>
-</li>
-<li>Configuring workload autoscaling
+</blockquote>
+<ul>
+<li>Configuring workload autoscaling</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Set up a <code>HorizontalPodAutoscaler</code> object based on a metric (existing, custom or external). Changes the number of pods running the workload.</li>
 <li>Vertical Pod Autoscaler. Changes the resources given to pods.</li>
@@ -893,38 +1125,54 @@ Google Cloud Professional Cloud Developer Study Guide Notes
 </li>
 <li><a href="https://www.youtube.com/watch?v=cFhch7hozRg">Cloud Tech Video: Introduction to GKE Autoscaling</a>.</li>
 </ul>
-</li>
-</ul>
+</blockquote>
 <p>5.3 Troubleshooting application performance. Considerations include:</p>
 <ul>
-<li>Creating a monitoring dashboard
+<li>Creating a monitoring dashboard</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>GCE/GKE dashboard by default.</li>
 <li>Can create your own dashboard with metrics.</li>
 </ul>
-</li>
-<li>Writing custom metrics and creating log-based metrics
+</blockquote>
+<ul>
+<li>Writing custom metrics and creating log-based metrics</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Custom metrics: set up the descriptor then write it to the logging agent.</li>
 <li>Logs-based metrics: set up in Cloud Logging.</li>
 </ul>
-</li>
-<li>Using Cloud Debugger
+</blockquote>
+<ul>
+<li>Using Cloud Debugger</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Injects snapshots (breakpoints) and log points (to Cloud Logging, without updating app code) into long-running applications.</li>
 </ul>
-</li>
-<li>Reviewing stack traces for error analysis
+</blockquote>
+<ul>
+<li>Reviewing stack traces for error analysis</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Error Reporting: holds error logs and groups them up per-issue.</li>
 </ul>
-</li>
-<li>Exporting logs from Google Cloud
+</blockquote>
+<ul>
+<li>Exporting logs from Google Cloud</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Log sinks: sends to the default logs bucket, and can be configured to send to other sinks (BigQuery, Pub/Sub, other buckets).</li>
 </ul>
-</li>
-<li>Viewing logs in the Google Cloud Console
+</blockquote>
+<ul>
+<li>Viewing logs in the Google Cloud Console</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Types of logs
 <ul>
@@ -936,32 +1184,40 @@ Google Cloud Professional Cloud Developer Study Guide Notes
 </li>
 <li>Logs explorer (in the console): build a query, visualise.</li>
 </ul>
-</li>
-<li>Reviewing application performance (e.g., Cloud Trace, Prometheus, OpenTelemetry)
+</blockquote>
+<ul>
+<li>Reviewing application performance (e.g., Cloud Trace, Prometheus, OpenTelemetry)</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Open Telemetry/Open Census/GCP Client libraries send telemetry to Cloud Trace.</li>
 <li>Helps you track round-trip-time around the entire tech stack, visualised in spans.</li>
 <li>Can evaluate responsiveness, identify bottlenecks.</li>
 </ul>
-</li>
-<li>Monitoring and profiling a running application
+</blockquote>
+<ul>
+<li>Monitoring and profiling a running application</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li>Cloud Monitoring workspace runs in a host project.</li>
 <li>Resources have default metrics.</li>
 <li>Alerting: notifications based on metrics.</li>
 <li>Cloud Monitoring uptime checks: hit an endpoint, verify certificate, can do auth.</li>
 </ul>
-</li>
-<li>Using documentation, forums, and Google Cloud support
+</blockquote>
+<ul>
+<li>Using documentation, forums, and Google Cloud support</li>
+</ul>
+<blockquote class=pcd-note>
 <ul>
 <li><a href=https://cloud.google.com/compute/quotas>GCP quotas</a> are increased by raising a request with GCP. For example, quotas apply to VM numbers and the CPUs/GPUs/Disks that are attached to them.</li>
 </ul>
-</li>
-</ul>
+</blockquote>
 </div>
 <footer class=post-footer>
 <nav class=paginav>
-<a class=next href=https://mattlui.com/posts/post/>
+<a class=next href=https://mattlui.com/posts/mui-drawer/>
 <span class=title>Next Page »</span>
 <br>
 <span>Material UI Drawer in a Div</span>
@@ -992,11 +1248,9 @@ Powered by
         <a href=https://git.io/hugopapermod rel=noopener target=_blank>PaperMod</a>
 </span>
 </footer>
-<a href=#top aria-label="go to top" title="Go to Top (Alt + G)">
-<button class=top-link id=top-link type=button accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
-</button>
+<a href=#top aria-label="go to top" title="Go to Top (Alt + G)" class=top-link id=top-link accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentcolor"><path d="M12 6H0l6-6z"/></svg>
 </a>
-<script>let menu=document.getElementById('menu');menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)},document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
+<script>let menu=document.getElementById('menu');menu&&(menu.scrollLeft=localStorage.getItem("menu-scroll-position"),menu.onscroll=function(){localStorage.setItem("menu-scroll-position",menu.scrollLeft)}),document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);window.matchMedia('(prefers-reduced-motion: reduce)').matches?document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView():document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.pushState(null,null,`#${a}`)})})</script>
 <script>var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")}</script>
 <script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script>
 </body>
