@@ -1,3 +1,15 @@
-.entry-header {
-    color: red !important;
+.pcd-note {
+    background-color: whitesmoke;
+    color:rgb(31, 31, 31);
+    margin-left: 20px !important;
+    padding: 10px 10px 1px 10px !important;
+}
+
+.pcd-note a {
+    color: rgb(31, 31, 31);
+}
+
+.pcd-note code {
+    background-color: rgb(26, 26, 26);
+    color: rgb(250, 43, 102);
 }
