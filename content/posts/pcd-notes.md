@@ -7,7 +7,7 @@ draft: false
 
 The Professional Cloud Developer exam covers a large, possibly unbounded, amount of content. These notes were built to cover every topic Google has suggested can be on the exam.
 
-The notes have a grey background, and each correspond to one of the ninity-one dot-points in the official [GCP Professional Cloud Developer Study Guide](https://cloud.google.com/certification/guides/cloud-developer). All outbound links refer to Google Cloud documentation.
+The notes have a grey background, and each corresponds to one of the nineity-one dot-points in the official [GCP Professional Cloud Developer Study Guide](https://cloud.google.com/certification/guides/cloud-developer). All outbound links refer to Google Cloud documentation.
 
 Everything's been sourced from [A Cloud Guru](https://acloudguru.com/), [Google Cloud Training on Coursera](https://www.coursera.org/learn/gcp-fundamentals) or the [Google Cloud Docs](https://cloud.google.com/docs) themselves.
 
@@ -48,7 +48,7 @@ Everything's been sourced from [A Cloud Guru](https://acloudguru.com/), [Google 
 	-   With containers, use smaller base images (Alpine) and the builder pattern to minimize their size.
 	-   See 5.2 GKE Autoscaling.
 	-   GCE can [autoscale managed instance groups](https://cloud.google.com/compute/docs/autoscaler).
-	-   App Engine Flexible vs Standard: Standard spins up instances quicker and can have zero instances running. Flexible always has one running. Prefered standard for spiky or low traffic.
+	-   App Engine Flexible vs Standard: Standard spins up instances quicker and can have zero instances running. Flexible always has one running. Preferred standard for spiky or low traffic.
 {{% /pcdnote %}}
 
 -   Geographic distribution of Google Cloud services (e.g., latency, regional services, zonal services)
@@ -57,14 +57,14 @@ Everything's been sourced from [A Cloud Guru](https://acloudguru.com/), [Google 
 -   Deploy to multiple zones for high-availability and fault-tolerance.
 -   Zonal services: VM instances, GKE Regional clusters.
 -   Regional services: Most serverless tech (Cloud Functions, Cloud Run) Static IPs, GKE Zonal clusters.
--   Persistent Disks & Cloud SQL are zonal, but can sychronously replicate and become regional.
+-   Persistent Disks & Cloud SQL are zonal, but can synchronously replicate and become regional.
 -   [Regions and Zones](https://cloud.google.com/compute/docs/regions-zones).
 {{% /pcdnote %}}
 
 -   Defining a key structure for high-write applications using Cloud Storage, Cloud Bigtable, Cloud Spanner, or Cloud SQL
 {{% pcdnote %}}
 -   Cloud Storage: don't name objects similarly.
--   Cloud Bigtable: one key per table. You can put multiple keys into this one key and seperate them with hashes for more distributed reads.
+-   Cloud Bigtable: one key per table. You can put multiple keys into this one key and separate them with hashes for more distributed reads.
 -   Cloud Spanner: Create second indexes and interleave related records for faster lookups.
 -   CloudSQL: Create secondary indexes or clustered indexes.
 {{% /pcdnote %}}
@@ -136,7 +136,7 @@ Everything's been sourced from [A Cloud Guru](https://acloudguru.com/), [Google 
 -   IAM: Divide into folders per-team and a projects per-environment. One project per application per environment. Assign least privilege.
 -   VPC Firewall Rules: Direction (ingress/egress), priority (lower number is higher), action (allow/deny), status, target, source, protocol/port.
 	-   Helps define what traffic reaches your resources.
--   VPC Service Controls: Controls ingress and egress for an entire service perimiter, which houses the resources in a project.
+-   VPC Service Controls: Controls ingress and egress for an entire service perimeter, which houses the resources in a project.
 {{% /pcdnote %}}
 
 -   Security mechanisms that secure/scan application binaries and manifests
@@ -168,7 +168,7 @@ Everything's been sourced from [A Cloud Guru](https://acloudguru.com/), [Google 
 
 -   Securing service-to-service communications (e.g., service mesh, Kubernetes Network Policies, and Kubernetes namespaces)
 {{% pcdnote %}}
--   Service mesh: add a sidecar container to pods. Controlls ingress & egress. Security, load-balancing, traffic control, metrics and more.
+-   Service mesh: add a sidecar container to pods. Controls ingress & egress. Security, load-balancing, traffic control, metrics and more.
 -   [Kubernetes Network Policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/): object that controls ingress and egress from a pod. Specify allowed IP ranges, namespaces and pods. 
 {{% /pcdnote %}}
 
@@ -370,7 +370,7 @@ Everything's been sourced from [A Cloud Guru](https://acloudguru.com/), [Google 
 
 -   Creating secure container images from code
 {{% pcdnote %}}
--   Add security scanning the CI process. You can add this as a Cloud Build step and call Container Registry on-demand, check the severity level and fail if it's too high.
+-   Add security scanning to the CI process. You can add this as a Cloud Build step and call Container Registry on-demand, check the severity level and fail if it's too high.
 -   Use Google's managed base images, and build on top of those.
 -   [Jib](https://github.com/GoogleContainerTools/jib): creates optimized Docker images from Java applications
 {{% /pcdnote %}}
@@ -414,7 +414,7 @@ Everything's been sourced from [A Cloud Guru](https://acloudguru.com/), [Google 
 -   Rolling deployments
 {{% pcdnote %}}
 -  GCE: Can roll out new instance templates in a MIG.
--  GKE: Apply an updated deployment. Pods will be recreated. Can set a rollingUpdate strategy with a maxUnavailable, and maxSurge (extra pods) to minimise distruption.
+-  GKE: Apply an updated deployment. Pods will be recreated. Can set a rollingUpdate strategy with a maxUnavailable, and maxSurge (extra pods) to minimise disruption.
 {{% /pcdnote %}}
 
 -   Canary deployments
@@ -435,7 +435,7 @@ Everything's been sourced from [A Cloud Guru](https://acloudguru.com/), [Google 
 -   Managing service accounts for VMs
 {{% pcdnote %}}
 -   By default, uses the Compute Engine Default Service Account.
-	-   Not recommended in pratice: it gives too broad of a permission set (project editor).
+	-   Not recommended in practice: it gives too broad of a permission set (project editor).
 -   Best to create a custom service account.
 {{% /pcdnote %}}
 
@@ -489,7 +489,7 @@ Everything's been sourced from [A Cloud Guru](https://acloudguru.com/), [Google 
 - Limits: how much resources a container consume before being restricted (maximum).
 	- Memory limits stop the pod with an out of memory error if you run out.
 	- CPU limits throttle the pod if you hit the limit.
-- ResourceQuotas: Maximum combined requests & limits from a namespace. A common pattern is to have an unbounded resources in prod, and bounded in non-prod. 
+- ResourceQuotas: Maximum combined requests & limits from a namespace. A common pattern is to have unbounded resources in prod, and bounded in non-prod. 
 - LimitRange: Set the minimum and maximum container limits. Prevents having pods that are too small or too large.
 - [Cloud Tech Video: Resource Requests & Limits](https://www.youtube.com/watch?v=xjpHggHKm78)
 - If persistent disks are needed, use a `StatefulSet`.
@@ -542,7 +542,7 @@ Everything's been sourced from [A Cloud Guru](https://acloudguru.com/), [Google 
 
 -   Securing Cloud Functions
 {{% pcdnote %}}
--   Perefer IAM. You can assign invoker permissions per-function. You can then send through an OAuth token in the header.
+-   Prefer IAM. You can assign invoker permissions per-function. You can then send through an OAuth token in the header.
 -   If not, use OAuth 2.0.
 -   For HTTP functions, consider requiring HTTPS and restricting CORS.
 -   VPC: By default allows ingress and egress from the project and internet. You could restrict this.
@@ -575,7 +575,7 @@ Everything's been sourced from [A Cloud Guru](https://acloudguru.com/), [Google 
 
 -   Connecting to a data store (e.g., Cloud SQL, Cloud Spanner, Firestore, Cloud Bigtable)
 {{% pcdnote %}}
--   Cloud SQL: use the [Cloud SQL proxy](https://cloud.google.com/sql/docs/mysql/sql-proxy) to authenticate yourself with IAM. In GKE, run it in a seperate conatiner in the pod.
+-   Cloud SQL: use the [Cloud SQL proxy](https://cloud.google.com/sql/docs/mysql/sql-proxy) to authenticate yourself with IAM. In GKE, run it in a separate container in the pod.
 	-   You can also use a private IP (available to all services in the VPC) and public IP (whitelist allowed clients).
 -   Firestore: client libraries will update live by default and send diffs. Doesn't use much power. [Video: To Realtime or Not?](https://www.youtube.com/watch?v=3aoxOtMM2rc)
 -   Use the client libraries. In some environments you can just pick up the service account permissions automatically. Otherwise download the service account credentials (json) and pass them through.
@@ -668,7 +668,7 @@ Everything's been sourced from [A Cloud Guru](https://acloudguru.com/), [Google 
 
 -   Using service accounts to make Cloud API calls
 {{% pcdnote %}}
--   See 1.2 Running services with least privlidged access.
+-   See 1.2 Running services with least privileged access.
 {{% /pcdnote %}}
 
 
@@ -684,7 +684,7 @@ Everything's been sourced from [A Cloud Guru](https://acloudguru.com/), [Google 
 
 -   Diagnosing a failed Compute Engine VM startup
 {{% pcdnote %}}
--   Common problems: invalid startup script, insufficent access to start up script (e.g. GCS permissions), network tags.
+-   Common problems: invalid startup script, insufficient access to start up script (e.g. GCS permissions), network tags.
 -   Common MIG problems: invalid templates (image does not exist), assigning a disk to multiple VMs to write, failing health-check (network tags).
 {{% /pcdnote %}}
 
